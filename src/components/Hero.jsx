@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  ArrowRight, 
-  Download, 
-  Sparkles, 
-  Mail, 
+import {
+  ArrowRight,
+  Download,
+  Sparkles,
+  Mail,
   MessageCircle,
   Code2,
   CheckCircle2,
   Terminal,
-  Layers
+  Layers,
+  User
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon } from './SocialIcons';
 import confetti from 'canvas-confetti';
@@ -19,6 +20,7 @@ export default function Hero({ data, onTriggerToast }) {
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(120);
+  const [imageError, setImageError] = useState(false);
 
   // Dynamic typing effect for roles
   useEffect(() => {
@@ -54,7 +56,7 @@ export default function Hero({ data, onTriggerToast }) {
     });
 
     onTriggerToast('Memulai unduh Curriculum Vitae (CV) Arsyandi...', 'success');
-    
+
     // Create dummy CV text or direct download link
     const element = document.createElement("a");
     const file = new Blob([
@@ -66,7 +68,7 @@ export default function Hero({ data, onTriggerToast }) {
       `Tentang:\n${personal.bio}\n\n` +
       `Keahlian Utama:\n- Frontend: React.js, Tailwind CSS, JavaScript (ES6+), HTML5/CSS3, TypeScript\n- Backend: Node.js, Express, REST APIs, MySQL/PostgreSQL\n` +
       `Portfolio Website: https://arsyandi-portfolio.local\n`
-    ], {type: 'text/plain'});
+    ], { type: 'text/plain' });
     element.href = URL.createObjectURL(file);
     element.download = `CV_Arsyandi_WebDeveloper.txt`;
     document.body.appendChild(element);
@@ -83,10 +85,10 @@ export default function Hero({ data, onTriggerToast }) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Column: Text & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start space-y-6 text-left">
-            
+
             {/* Status Pill Badge */}
             <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-teal-500/10 dark:bg-teal-500/15 border border-teal-500/30 text-teal-700 dark:text-teal-300 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-md shadow-sm">
               <span className="relative flex h-2.5 w-2.5">
@@ -104,10 +106,10 @@ export default function Hero({ data, onTriggerToast }) {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15]">
                 {personal.fullName}
               </h1>
-              
+
               {/* Animated Typing Role */}
               <div className="flex items-center gap-2 text-2xl sm:text-3xl lg:text-4xl font-bold min-h-[48px] sm:min-h-[52px]">
-                <span className="text-slate-700 dark:text-slate-300">Spesialis</span>
+                <span className="text-slate-700 dark:text-slate-300">Role</span>
                 <span className="bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 bg-clip-text text-transparent underline decoration-teal-500/40 decoration-wavy decoration-2">
                   {displayText}
                 </span>
@@ -195,13 +197,13 @@ export default function Hero({ data, onTriggerToast }) {
 
           {/* Right Column: Interactive Card & Floating Tech Stacks */}
           <div className="lg:col-span-5 relative flex justify-center items-center">
-            
+
             {/* Ambient Back Glow */}
             <div className="absolute inset-0 bg-gradient-to-tr from-teal-500/20 via-cyan-500/20 to-indigo-500/20 rounded-3xl blur-2xl transform rotate-3 scale-95" />
 
             {/* Main Interactive Developer Profile Card */}
             <div className="relative w-full max-w-md p-6 sm:p-8 rounded-3xl bg-white/90 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 shadow-2xl backdrop-blur-xl">
-              
+
               {/* Header inside card: Mac-style dots */}
               <div className="flex items-center justify-between pb-6 border-b border-slate-100 dark:border-slate-800/80">
                 <div className="flex items-center gap-2">
@@ -211,23 +213,35 @@ export default function Hero({ data, onTriggerToast }) {
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-[11px] font-mono text-slate-400 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">
                   <Terminal className="w-3 h-3 text-teal-400" />
-                  <span>arsyandi@portfolio:~$</span>
+                  <span>arsyandina@gmail.com</span>
                 </div>
               </div>
 
               {/* Avatar + Highlights */}
               <div className="pt-6 flex flex-col items-center text-center">
-                
-                {/* Glowing Avatar Frame */}
-                <div className="relative mb-5">
-                  <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-gradient-to-tr from-teal-400 via-cyan-500 to-blue-600 p-1 shadow-xl shadow-teal-500/20">
-                    <div className="w-full h-full rounded-[14px] bg-slate-900 flex items-center justify-center overflow-hidden">
-                      <div className="text-4xl sm:text-5xl font-mono font-bold bg-gradient-to-br from-white via-teal-100 to-teal-400 bg-clip-text text-transparent">
-                        &lt;A/&gt;
-                      </div>
+
+                {/* Glowing Avatar Photo Frame */}
+                <div className="relative mb-5 group">
+                  <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl bg-gradient-to-tr from-teal-400 via-cyan-500 to-blue-600 p-1 shadow-xl shadow-teal-500/25 ring-4 ring-teal-500/10 dark:ring-teal-500/20">
+                    <div className="w-full h-full rounded-[14px] bg-slate-900 overflow-hidden relative flex items-center justify-center">
+                      {imageError || !personal.avatar ? (
+                        <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-800 to-slate-950 text-teal-400 p-2 text-center">
+                          <User className="w-12 h-12 text-teal-400/80 mb-1" />
+                          <span className="text-[10px] font-mono text-slate-400">Foto Profil</span>
+                        </div>
+                      ) : (
+                        <img
+                          src={personal.avatar}
+                          alt={personal.fullName || personal.name}
+                          onError={() => setImageError(true)}
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                        />
+                      )}
+                      {/* Subtle hover vignette overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                     </div>
                   </div>
-                  
+
                   {/* Floating Mini Badge */}
                   <div className="absolute -bottom-2 -right-2 px-2.5 py-1 rounded-lg bg-teal-500 text-white font-mono text-[11px] font-bold shadow-md flex items-center gap-1">
                     <CheckCircle2 className="w-3 h-3" />
@@ -239,7 +253,7 @@ export default function Hero({ data, onTriggerToast }) {
                   {personal.name}
                 </h3>
                 <p className="text-xs sm:text-sm font-medium text-teal-600 dark:text-teal-400 font-mono mt-0.5">
-                  React.js & Tailwind Specialist
+                  FullStack Developer
                 </p>
 
                 {/* Code Snippet Box */}
@@ -274,7 +288,7 @@ export default function Hero({ data, onTriggerToast }) {
             {/* Floating Tech Badges around the Card */}
             <div className="hidden md:flex items-center gap-1.5 absolute -top-4 -left-6 px-3.5 py-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg text-xs font-semibold text-teal-600 dark:text-teal-400 animate-float">
               <span className="w-2 h-2 rounded-full bg-teal-400 animate-ping inline-block" />
-              <span>⚛️ React 18+</span>
+              <span>⚛️ React.JS</span>
             </div>
 
             <div className="hidden md:flex items-center gap-1.5 absolute -bottom-5 -right-4 px-3.5 py-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-lg text-xs font-semibold text-cyan-600 dark:text-cyan-400 animate-float animation-delay-2000">

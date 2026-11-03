@@ -300,3 +300,4 @@ export default function Contact({ data, onTriggerToast }) {
     </section>
   );
 }
+

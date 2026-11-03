@@ -1,17 +1,19 @@
 export const portfolioData = {
   personal: {
     name: "Arsyandi",
-    fullName: "M. Arsyandi",
+    fullName: "Arsyandi",
+    // Foto Profil: Simpan file foto Anda di folder 'public/foto-profil.jpg' lalu gunakan "/foto-profil.jpg", atau gunakan tautan URL foto langsung
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop",
     roles: [
       "Full-Stack Web Developer",
-      "React & Frontend Specialist",
-      "UI/UX Enthusiast",
-      "Creative Problem Solver"
+      "Frontend Developer",
+      "UI/UX Designer",
+      "Data Analyst"
     ],
     tagline: "Membangun Aplikasi Web Modern, Cepat, dan Menawan.",
-    bio: "Halo! Saya Arsyandi, seorang Web Developer yang bersemangat dalam merancang dan mengembangkan pengalaman digital yang intuitif, responsif, dan berkinerja tinggi. Berpengalaman dalam ekosistem JavaScript modern seperti React.js, Tailwind CSS, serta arsitektur backend yang scalable.",
+    bio: "Halo! Saya Arsyandi sebagai Disabilitas Tuli yang tidak dapat mendengar, seorang Web Developer yang bersemangat dalam merancang dan mengembangkan pengalaman digital yang intuitif, responsif, dan berkinerja tinggi. Berpengalaman dalam ekosistem JavaScript modern seperti React.js, Tailwind CSS, serta arsitektur backend yang scalable.",
     location: "Indonesia",
-    status: "Tersedia untuk Proyek Freelance & Full-time",
+    status: "Tersedia untuk Project & Fulltime",
     email: "arsyandi.dev@gmail.com",
     whatsapp: "+6281234567890",
     whatsappDisplay: "+62 812-3456-7890",
@@ -264,3 +266,4 @@ export const portfolioData = {
     }
   ]
 };
+

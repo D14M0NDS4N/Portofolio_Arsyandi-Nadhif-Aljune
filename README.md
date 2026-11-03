@@ -128,3 +128,4 @@ Cukup buka file tersebut dan ubah nilai-nilainya sesuai data pribadi Anda, seper
 - `personal.github`, `personal.linkedin`, `personal.instagram`: Tautan profil Anda
 - `projects`: Menambah atau mengubah portofolio proyek Anda beserta screenshot dan linknya.
 - `skills`: Menambah keahlian dan persentase penguasaan teknologi Anda.
+
