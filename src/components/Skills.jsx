@@ -51,9 +51,10 @@ export default function Skills({ data }) {
 
   const allSkills = useMemo(() => {
     return [
-      ...data.skills.frontend,
-      ...data.skills.backend,
-      ...data.skills.tools
+      ...(data.skills.frontend || []),
+      ...(data.skills.backend || []),
+      ...(data.skills.dataAnalyst || []),
+      ...(data.skills.tools || [])
     ];
   }, [data.skills]);
 
@@ -61,11 +62,13 @@ export default function Skills({ data }) {
     let result = allSkills;
 
     if (activeTab === 'frontend') {
-      result = data.skills.frontend;
+      result = data.skills.frontend || [];
     } else if (activeTab === 'backend') {
-      result = data.skills.backend;
+      result = data.skills.backend || [];
+    } else if (activeTab === 'dataAnalyst') {
+      result = data.skills.dataAnalyst || [];
     } else if (activeTab === 'tools') {
-      result = data.skills.tools;
+      result = data.skills.tools || [];
     }
 
     if (searchQuery.trim() !== '') {
@@ -104,9 +107,10 @@ export default function Skills({ data }) {
           <div className="flex flex-wrap items-center gap-1.5 p-1.5 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
             {[
               { id: 'all', label: 'Semua Stack', count: allSkills.length },
-              { id: 'frontend', label: 'Frontend', count: data.skills.frontend.length },
-              { id: 'backend', label: 'Backend & DB', count: data.skills.backend.length },
-              { id: 'tools', label: 'Tools & DevOps', count: data.skills.tools.length },
+              { id: 'frontend', label: 'Frontend', count: data.skills.frontend?.length || 0 },
+              { id: 'backend', label: 'Backend & DB', count: data.skills.backend?.length || 0 },
+              { id: 'dataAnalyst', label: 'Data Analyst & AI', count: data.skills.dataAnalyst?.length || 0 },
+              { id: 'tools', label: 'UI/UX & Tools', count: data.skills.tools?.length || 0 },
             ].map((tab) => (
               <button
                 key={tab.id}

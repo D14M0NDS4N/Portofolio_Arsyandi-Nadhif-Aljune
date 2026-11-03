@@ -55,22 +55,118 @@ export default function Hero({ data, onTriggerToast }) {
       colors: ['#14b8a6', '#06b6d4', '#3b82f6', '#f59e0b']
     });
 
-    onTriggerToast('Memulai unduh Curriculum Vitae (CV) Arsyandi...', 'success');
+    onTriggerToast('Mengunduh CV ATS - Arsyandi Nadhif Aljune...', 'success');
 
-    // Create dummy CV text or direct download link
+    // Generate comprehensive ATS CV matching the user's PDF
+    const atsCVContent = 
+`ARSYANDI NADHIF ALJUNE
+${personal.email} | ${personal.whatsapp} | ${personal.linkedin}
+
+================================================================================
+RINGKASAN PROFIL
+================================================================================
+${personal.bio}
+
+================================================================================
+PENDIDIKAN
+================================================================================
+Universitas Logistik dan Bisnis Internasional               September, 2023 - November, 2026
+Diploma III Teknik Informatika - IPK 3,57
+• Berfokus pada pengembangan web menggunakan HTML, CSS, dan JavaScript, serta penerapan Kecerdasan Buatan (Artificial Intelligence) dan Data Science.
+• Mendalami pemrograman web, analisis data, serta pengembangan solusi teknologi yang ramah pengguna.
+• Menyelesaikan berbagai proyek praktis berbasis data dan pengembangan sistem untuk memecahkan masalah nyata.
+Area of Interest: Full Stack Developer, UI/UX Design, Web Development, Data Science, Machine Learning
+
+================================================================================
+PENGALAMAN MAGANG
+================================================================================
+1. Web Frontend Intern                                     April, 2026 - Juli, 2026
+   PT. Educa Sisfomedia Indonesia (Educa Studio) - Salatiga, Jawa Tengah
+   • Berhasil menyelesaikan proyek pengembangan halaman arahan (landing page) untuk sebuah Usaha Kecil dan Menengah (UKM) selama 3 bulan.
+   • Merancang dan membangun antarmuka situs web serta fitur-fitur interaktifnya menggunakan HTML, CSS, dan JavaScript.
+   • Menerapkan kerangka kerja Bootstrap untuk memastikan tata letak yang sepenuhnya responsif, serta mengintegrasikan Scrollspy bersama AOS (Animate On Scroll) guna menciptakan pengalaman menggulir yang dinamis dan menarik bagi pengguna.
+
+2. Frontend Engineer Intern                                Februari, 2023 - Mei, 2023
+   PT. Digdaya Olah Teknologi Indonesia - Malang, Jawa Timur
+   • Mengembangkan dan mengoptimalkan antarmuka pengguna menggunakan HTML, CSS, dan JavaScript, serta memastikan desain yang responsif untuk berbagai perangkat.
+   • Membangun dasbor dinamis untuk pengelolaan data pelanggan, yang dilengkapi dengan tabel interaktif dan grafik visual menggunakan React.js, sehingga meningkatkan efisiensi pengelolaan data sebesar 30%.
+
+3. 3D Architectural Visualizer Intern                      Juli, 2021 - September, 2021
+   CV. Esa Rekayasa Teknologi - Cimahi, Jawa Barat
+   • Membuat pemodelan 3D dan visualisasi bangunan ruko menggunakan SketchUp dan Lumion.
+   • Belajar mendesain objek 3D arsitektur, membuat animasi bangunan, serta mengedit video presentasi proyek.
+   • Melakukan pemodelan 3D bangunan, membuat animasi render menggunakan Lumion, dan menyunting video hasil proyek dengan Adobe Premiere.
+
+================================================================================
+PENGALAMAN PELATIHAN & SERTIFIKASI
+================================================================================
+• Data Scientist Cohort                                    Februari, 2026 - Juli, 2026
+  Coding Camp 2026 powered by DBS Foundation, Indonesia
+  - Mempelajari pengolahan, pembersihan, dan analisis data (Data Wrangling & Exploratory Data Analysis).
+  - Menguasai pembuatan model Machine Learning dan statistik menggunakan Python.
+  - Mengembangkan proyek nyata dan kapabilitas problem solving berbasis data melalui capstone project.
+
+• Front-End and Backend Developer Cohort                   Februari, 2025 - Juli, 2025
+  Coding Camp 2025 powered by DBS Foundation, Indonesia
+  - Mempelajari pengembangan frontend yang interaktif dan responsif untuk aplikasi web.
+  - Menguasai pengembangan backend, manajemen database, serta integrasi API.
+  - Mengembangkan kemampuan pemrograman web secara utuh dari sisi klien hingga peladen (full-stack).
+
+• Data Analyst                                             September, 2026 - November, 2026
+  Mix Academy Batch 3
+  - Mempelajari teknik pengolahan, pembersihan, dan analisis data bisnis.
+  - Menguasai pembuatan laporan serta visualisasi data untuk evaluasi dan strategi usaha.
+  - Mengembangkan keterampilan analitis dalam memecahkan masalah operasional dan pemasaran UMKM.
+
+• Web Frontend dengan Bootstrap                            April, 2026 - April, 2026
+  PT. Educa Sisfomedia Indonesia (Educa Studio) - Salatiga, Jawa Tengah
+  - Memahami penggunaan komponen dan sistem grid Bootstrap.
+  - Membuat desain halaman web yang responsive di berbagai ukuran layar.
+  - Mengembangkan keterampilan praktis pengembangan frontend untuk proyek web dan landing page.
+
+• Coding For Disability Program - JavaScript Course        Agustus, 2024 - Oktober, 2024
+  Educourse.id
+  - Mempelajari dasar pemrograman JavaScript, struktur data, operator, kondisi, dan perulangan (loop).
+  - Menguasai pembuatan function, objek, serta kelas dalam JavaScript.
+  - Menerapkan ilmu dalam proyek pembuatan aplikasi To-Do List serta dasar pengelolaan domain dan hosting.
+
+• Web Development Deaf to Dev                              Mei, 2024 - Mei, 2024
+  Deaf to Dev x Tokopedia Academy
+  - Mempelajari dasar struktur halaman web menggunakan HTML dan styling dengan CSS.
+  - Menguasai penggunaan framework Bootstrap untuk mempercepat desain antarmuka.
+  - Mengembangkan proyek praktis berupa pembuatan website portofolio pribadi yang responsif.
+
+• Junior Web Programming                                   Juli, 2022 - Desember, 2022
+  Yayasan Plan International Indonesia
+  - Mempelajari dasar struktur halaman web menggunakan HTML.
+  - Menguasai penataan gaya dan tata letak tampilan web menggunakan CSS.
+  - Menerapkan materi ke dalam proyek pembuatan web untuk menampilkan hasil karya mandiri.
+
+================================================================================
+KETERAMPILAN TEKNIS
+================================================================================
+• Frontend Development : HTML, CSS, JavaScript, Dart, React.js, Bootstrap, Tailwind CSS
+• Backend Development  : MySQL, PostgreSQL, Python, CodeIgniter, PHP, Node.js
+• UI/UX Design         : Figma, Draw.io, Canva
+• Data Analyst         : Microsoft Excel, SQL, Google Colab, Google Sheets
+
+================================================================================
+KETERAMPILAN NON-TEKNIS (SOFT SKILLS)
+================================================================================
+Manajemen Waktu | Kolaborasi | Adaptasi | Berpikir Kritis | Pemecahan Masalah | Kerja Sama Tim | Komunikasi Visual dan Tertulis
+
+================================================================================
+BAHASA
+================================================================================
+• Bahasa Indonesia - (Fasih)
+• Bahasa Isyarat   - (Fasih)
+• Bahasa Inggris   - (Dasar)
+`;
+
     const element = document.createElement("a");
-    const file = new Blob([
-      `CURRICULUM VITAE - ${personal.fullName}\n` +
-      `Bidang: ${personal.roles.join(', ')}\n` +
-      `Email: ${personal.email}\n` +
-      `WhatsApp: ${personal.whatsappDisplay}\n` +
-      `Lokasi: ${personal.location}\n\n` +
-      `Tentang:\n${personal.bio}\n\n` +
-      `Keahlian Utama:\n- Frontend: React.js, Tailwind CSS, JavaScript (ES6+), HTML5/CSS3, TypeScript\n- Backend: Node.js, Express, REST APIs, MySQL/PostgreSQL\n` +
-      `Portfolio Website: https://arsyandi-portfolio.local\n`
-    ], { type: 'text/plain' });
+    const file = new Blob([atsCVContent], { type: 'text/plain;charset=utf-8' });
     element.href = URL.createObjectURL(file);
-    element.download = `CV_Arsyandi_WebDeveloper.txt`;
+    element.download = `CV_ATS_Arsyandi_Nadhif_Aljune.txt`;
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
@@ -253,17 +349,17 @@ export default function Hero({ data, onTriggerToast }) {
                   {personal.name}
                 </h3>
                 <p className="text-xs sm:text-sm font-medium text-teal-600 dark:text-teal-400 font-mono mt-0.5">
-                  FullStack Developer
+                  Frontend Developer & Data Analyst
                 </p>
 
                 {/* Code Snippet Box */}
                 <div className="w-full mt-5 p-3.5 rounded-xl bg-slate-950 text-left font-mono text-xs text-slate-300 border border-slate-800 shadow-inner overflow-hidden">
-                  <div className="text-teal-400 font-semibold mb-1">// Focus Stack</div>
-                  <div className="text-slate-400">const dev = &#123;</div>
-                  <div className="pl-4 text-emerald-400">cleanCode: <span className="text-cyan-300">true</span>,</div>
-                  <div className="pl-4 text-emerald-400">framework: <span className="text-amber-300">'React.js'</span>,</div>
-                  <div className="pl-4 text-emerald-400">styling: <span className="text-amber-300">'Tailwind CSS'</span>,</div>
-                  <div className="pl-4 text-emerald-400">speed: <span className="text-amber-300">'100/100'</span></div>
+                  <div className="text-teal-400 font-semibold mb-1">// Profil Pengembang</div>
+                  <div className="text-slate-400">const arsyandi = &#123;</div>
+                  <div className="pl-4 text-emerald-400">alumnus: <span className="text-amber-300">'D3 TI (ULBI)'</span>,</div>
+                  <div className="pl-4 text-emerald-400">ipk: <span className="text-cyan-300">'3.57'</span>,</div>
+                  <div className="pl-4 text-emerald-400">spesialisasi: <span className="text-amber-300">'Frontend & Data'</span>,</div>
+                  <div className="pl-4 text-emerald-400">orientasiDetail: <span className="text-cyan-300">true</span></div>
                   <div className="text-slate-400">&#125;;</div>
                 </div>
 

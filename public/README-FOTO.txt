@@ -16,3 +16,4 @@ PANDUAN MENAMBAHKAN FOTO PROFIL:
    }
 
 Foto akan otomatis tampil rapi di kartu profil hero dengan bingkai bercahaya, sudut membulat, dan efek zoom halus saat disentuh/di-hover kursor.
+

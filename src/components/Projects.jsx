@@ -15,10 +15,10 @@ export default function Projects({ data }) {
 
   const categories = [
     { id: 'all', label: 'Semua Proyek' },
-    { id: 'fullstack', label: 'Full-Stack' },
-    { id: 'webapp', label: 'Web App' },
-    { id: 'frontend', label: 'Frontend' },
-    { id: 'uiux', label: 'UI/UX & Library' },
+    { id: 'frontend', label: 'Web Frontend' },
+    { id: 'data', label: 'Data Science & Analyst' },
+    { id: 'webapp', label: 'Web Application' },
+    { id: 'uiux', label: 'UI/UX & 3D' },
   ];
 
   const filteredProjects = useMemo(() => {
