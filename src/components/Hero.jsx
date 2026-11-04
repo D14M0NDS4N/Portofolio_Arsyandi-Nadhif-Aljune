@@ -332,7 +332,6 @@ BAHASA
 
                   {/* Floating Mini Badge */}
                   <div className="absolute -bottom-3 -right-6 px-2.5 py-1 rounded-lg bg-teal-500 text-white font-mono text-[11px] font-bold shadow-md flex items-center gap-1">
-                    <CheckCircle2 className="w-3 h-3" />
                     <span>Disabilitas Tuli</span>
                   </div>
                 </div>

@@ -26,6 +26,62 @@ export default function Projects({ data }) {
     return data.projects.filter(p => p.categorySlug === filter);
   }, [filter, data.projects]);
 
+  // Fungsi helper untuk mendapatkan slug logo tech stack
+  const getTechSlug = (name) => {
+    const map = {
+      // Frontend & Frameworks
+      "ReactJS": "react",
+      "React (TypeScript)": "react",
+      "JavaScript": "javascript",
+      "TypeScript": "typescript",
+      "HTML": "html5",
+      "CSS": "css3",
+      "Tailwind CSS": "tailwindcss",
+      "Bootstrap": "bootstrap",
+      "UI/UX Design": "figma",
+      "Figma": "figma",
+
+      // Backend & APIs
+      "Python": "python",
+      "FastAPI": "fastapi",
+      "Express.js": "express",
+      "Node.js": "nodedotjs",
+      "PHP": "php",
+      "CodeIgniter": "codeigniter",
+      "RESTful API": "postman",
+
+      // Data Science, ML & AI
+      "Data Analysis": "pandas",
+      "Data Visualization": "tableau",
+      "Streamlit": "streamlit",
+      "Machine Learning": "scikitlearn",
+      "TensorFlow": "tensorflow",
+      "OpenCV": "opencv",
+      "MediaPipe": "google",
+      "PySpark": "apachespark",
+      "Google Gemini API": "googlegemini",
+      "Artificial Intelligence (AI)": "openai",
+      "Clustering": "python",
+      "Classification": "python",
+      "Jupyter notebook / Google Colabs": "jupyter",
+
+      // Database & Storage
+      "Neon Database": "postgresql",
+      "PostgreSQL": "postgresql",
+      "MySQL": "mysql",
+      "MariaDB": "mariadb",
+
+      // DevOps, Tools & Version Control
+      "Git": "git",
+      "GitHub": "github",
+      "Docker": "docker",
+      "VS Code": "visualstudiocode",
+      "Dashboard Development": "metabase"
+    };
+    if (map[name]) return map[name];
+    return name.toLowerCase().replace(/\s+/g, '').replace(/\./g, '').replace(/\(/g, '').replace(/\)/g, '');
+  };
+
   return (
     <section id="projects" className="py-24 relative overflow-hidden bg-slate-100/50 dark:bg-slate-900/40 border-y border-slate-200/60 dark:border-slate-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,10 +122,10 @@ export default function Projects({ data }) {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-md hover:shadow-2xl hover:border-teal-500/40 transition-all duration-300 flex flex-col overflow-hidden"
+              className="group rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-md hover:shadow-2xl hover:border-teal-500/40 transition-all duration-300 flex flex-col h-full overflow-hidden"
             >
               {/* Image Preview Container */}
-              <div className="relative h-52 sm:h-56 overflow-hidden bg-slate-800">
+              <div className="relative h-52 sm:h-56 overflow-hidden bg-slate-800 shrink-0">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -125,21 +181,34 @@ export default function Projects({ data }) {
                     <ArrowUpRight className="w-5 h-5 shrink-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-teal-500" />
                   </h3>
 
-                  <p className="text-sm text-slate-600 dark:text-slate-400 mt-2.5 line-clamp-2 leading-relaxed">
+                  {/* Deskripsi dengan tinggi konsisten (tepat 2 baris) */}
+                  <p className="text-sm text-slate-600 dark:text-slate-400 mt-2.5 leading-relaxed">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Tech Chips */}
-                <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-1.5">
-                  {project.techStack.map((tech, idx) => (
-                    <span
-                      key={idx}
-                      className="px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800/80">
+                  <div className="flex flex-wrap gap-1.5 max-h-16 overflow-hidden">
+                    {project.techStack.map((tech, idx) => {
+                      const slug = getTechSlug(tech);
+                      return (
+                        <span
+                          key={idx}
+                          title={tech}
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-mono font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700/80 shadow-xs hover:border-teal-500 transition-colors"
+                        >
+                          <img
+                            src={`https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/${slug}.svg`}
+                            alt={tech}
+                            className="w-3.5 h-3.5 shrink-0 dark:invert"
+                            onError={(e) => { e.target.style.display = 'none'; }}
+                          />
+                          <span className="whitespace-nowrap">{tech}</span>
+                        </span>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>

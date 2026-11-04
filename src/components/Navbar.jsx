@@ -37,7 +37,6 @@ export default function Navbar({ darkMode, setDarkMode }) {
     { name: 'Proyek', href: '#projects', id: 'projects' },
     { name: 'Pengalaman', href: '#experience', id: 'experience' },
     { name: 'Sertifikasi', href: '#certifications', id: 'certifications' },
-    { name: 'Layanan', href: '#services', id: 'services' },
     { name: 'Kontak', href: '#contact', id: 'contact' },
   ];
 
@@ -52,11 +51,10 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'py-3.5 bg-white/85 dark:bg-[#080d1a]/85 backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-teal-950/20 border-b border-slate-200/80 dark:border-slate-800/80'
           : 'py-5 bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -88,11 +86,10 @@ export default function Navbar({ darkMode, setDarkMode }) {
                   key={link.id}
                   href={link.href}
                   onClick={(e) => handleLinkClick(e, link.href)}
-                  className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all duration-200 relative ${
-                    isActive
+                  className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all duration-200 relative ${isActive
                       ? 'text-teal-600 dark:text-teal-400 font-semibold'
                       : 'text-slate-600 hover:text-teal-500 dark:text-slate-300 dark:hover:text-teal-400'
-                  }`}
+                    }`}
                 >
                   {link.name}
                   {isActive && (
@@ -159,11 +156,10 @@ export default function Navbar({ darkMode, setDarkMode }) {
                     key={link.id}
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                      isActive
+                    className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all ${isActive
                         ? 'bg-teal-500/10 text-teal-600 dark:text-teal-400 font-semibold'
                         : 'text-slate-600 hover:text-teal-500 dark:text-slate-300 dark:hover:text-teal-400 hover:bg-slate-50 dark:hover:bg-slate-800/50'
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </a>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { 
-  Award, 
-  Calendar, 
-  Eye, 
-  ShieldCheck, 
-  Building2, 
-  Copy, 
-  Check, 
+import {
+  Award,
+  Calendar,
+  Eye,
+  ShieldCheck,
+  Building2,
+  Copy,
+  Check,
   Maximize2,
   ChevronDown,
   ChevronUp
@@ -44,7 +44,7 @@ export default function Certifications({ data }) {
   return (
     <section id="certifications" className="py-24 relative overflow-hidden bg-slate-100/50 dark:bg-slate-900/40 border-y border-slate-200/60 dark:border-slate-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3 border border-emerald-500/20">
@@ -69,7 +69,7 @@ export default function Certifications({ data }) {
             >
               <div>
                 {/* 1. GAMBAR FOTO SERTIFIKAT */}
-                <div 
+                <div
                   onClick={() => setSelectedCert(cert)}
                   className="relative h-48 sm:h-44 overflow-hidden bg-slate-950 cursor-pointer border-b border-slate-100 dark:border-slate-800"
                 >
@@ -79,7 +79,7 @@ export default function Certifications({ data }) {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
-                  
+
                   {/* Subtle dark vignette */}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
 
@@ -102,9 +102,9 @@ export default function Certifications({ data }) {
 
                 {/* CARD CONTENT */}
                 <div className="p-5 space-y-3">
-                  
+
                   {/* 2. TEKS (NAMA SERTIFIKASI) */}
-                  <h3 
+                  <h3
                     onClick={() => setSelectedCert(cert)}
                     className="text-base font-bold text-slate-900 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-colors line-clamp-2 cursor-pointer leading-snug"
                     title={cert.title}
@@ -172,9 +172,9 @@ export default function Certifications({ data }) {
               className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl font-bold text-sm text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-md hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 group"
             >
               <span>
-                {isExpanded 
-                  ? 'Tampilkan Lebih Sedikit' 
-                  : `Lihat Lebih Banyak Sertifikasi (+${certs.length - INITIAL_ITEMS})`}
+                {isExpanded
+                  ? 'Tampilkan Lebih Sedikit'
+                  : `Lihat Lebih Banyak (+${certs.length - INITIAL_ITEMS})`}
               </span>
               {isExpanded ? (
                 <ChevronUp className="w-4 h-4 text-emerald-500 group-hover:-translate-y-1 transition-transform" />

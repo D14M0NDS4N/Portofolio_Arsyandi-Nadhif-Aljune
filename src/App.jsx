@@ -6,7 +6,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Certifications from './components/Certifications';
-import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
@@ -58,7 +57,6 @@ export default function App() {
           <Projects data={portfolioData} />
           <Experience data={portfolioData} />
           <Certifications data={portfolioData} />
-          <Services data={portfolioData} />
           <Contact data={portfolioData} onTriggerToast={triggerToast} />
         </main>
 

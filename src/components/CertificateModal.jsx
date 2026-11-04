@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, ExternalLink, ZoomIn } from 'lucide-react';
+import { X, ExternalLink } from 'lucide-react';
 
 export default function CertificateModal({ certificate, onClose }) {
   useEffect(() => {
@@ -16,17 +16,22 @@ export default function CertificateModal({ certificate, onClose }) {
 
   if (!certificate) return null;
 
+  // Gunakan gambar thumbnail untuk tampilan modal yang mulus, 
+  // dan pdfUrl untuk tombol download/buka dokumen asli.
+  const displayImage = certificate.image;
+  const pdfFile = certificate.pdfUrl;
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 overflow-hidden">
       {/* Dark Ambient Backdrop */}
-      <div 
+      <div
         className="fixed inset-0 bg-slate-950/90 backdrop-blur-md transition-opacity"
         onClick={onClose}
       />
 
-      {/* Pure Image Lightbox Container (Tanpa Teks Panjang) */}
+      {/* Lightbox Container */}
       <div className="relative w-full max-w-5xl max-h-[92vh] flex flex-col items-center z-10 animate-fade-in">
-        
+
         {/* Top Minimal Toolbar */}
         <div className="w-full flex items-center justify-between pb-3 px-2 text-white">
           <div className="flex items-center gap-2">
@@ -37,20 +42,10 @@ export default function CertificateModal({ certificate, onClose }) {
           </div>
 
           <div className="flex items-center gap-2">
-            <a
-              href={certificate.image}
-              target="_blank"
-              rel="noreferrer"
-              className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-200 hover:text-white transition-colors flex items-center gap-1.5 text-xs font-semibold backdrop-blur-md"
-              title="Buka gambar di tab baru"
-            >
-              <ExternalLink className="w-4 h-4" />
-              <span className="hidden sm:inline">Ukuran Asli</span>
-            </a>
 
             <button
               onClick={onClose}
-              aria-label="Tutup foto sertifikat"
+              aria-label="Tutup modal sertifikat"
               className="p-2 rounded-xl bg-slate-800/80 hover:bg-rose-600 text-slate-200 hover:text-white transition-colors backdrop-blur-md"
               title="Tutup (ESC)"
             >
@@ -59,10 +54,10 @@ export default function CertificateModal({ certificate, onClose }) {
           </div>
         </div>
 
-        {/* Pure Certificate Image Box */}
-        <div className="relative w-full max-h-[82vh] flex items-center justify-center overflow-auto rounded-2xl bg-slate-900 border border-slate-700/60 shadow-2xl p-2 sm:p-3">
+        {/* Kotak Gambar Sertifikat yang Mulus dan Pasti Muncul */}
+        <div className="relative w-full h-[78vh] flex items-center justify-center overflow-hidden rounded-2xl bg-slate-900 border border-slate-700/60 shadow-2xl p-2 sm:p-3">
           <img
-            src={certificate.image}
+            src={displayImage}
             alt={certificate.title}
             className="max-h-[78vh] w-auto max-w-full object-contain rounded-xl shadow-lg transition-transform duration-300"
           />

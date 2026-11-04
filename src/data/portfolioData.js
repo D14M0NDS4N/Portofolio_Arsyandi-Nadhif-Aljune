@@ -9,7 +9,7 @@ export const portfolioData = {
       "Data Analyst"
     ],
     "tagline": "Membangun Solusi Digital yang Responsif, Inklusif, dan Bermanfaat.",
-    "bio": "Lulusan Diploma III Teknik Informatika (IPK 3,57) yang memiliki keahlian dalam pengembangan web frontend dan analisis data. Memiliki latar belakang di bidang Seni Rupa yang memperkuat kepekaan desain antarmuka (UI/UX) dan estetika visual. Sebagai seorang Tuli dengan kemampuan belajar visual yang kuat, saya dikenal sebagai pribadi yang tekun, adaptif, serta berorientasi pada detail. Siap berkontribusi secara profesional dalam membangun solusi digital yang responsif, inklusif, dan bermanfaat bagi masyarakat.",
+    "bio": "Lulusan Diploma III Teknik Informatika yang memiliki keahlian dalam pengembangan web frontend dan analisis data. Memiliki latar belakang di bidang Seni Rupa yang memperkuat kepekaan desain antarmuka (UI/UX) dan estetika visual. Sebagai seorang Tuli dengan kemampuan belajar visual yang kuat, saya dikenal sebagai pribadi yang tekun, adaptif, serta berorientasi pada detail. Siap berkontribusi secara profesional dalam membangun solusi digital yang responsif, inklusif, dan bermanfaat bagi masyarakat.",
     "location": "Bandung, Jawa Barat",
     "status": "Tersedia untuk Magang & Full-time",
     "email": "massandi2010@gmail.com",
@@ -293,151 +293,125 @@ export const portfolioData = {
       "description": "Mempelajari dasar struktur halaman web menggunakan HTML. Menguasai penataan gaya dan tata letak tampilan web menggunakan CSS. Menerapkan materi ke dalam proyek pembuatan web untuk menampilkan hasil karya mandiri."
     }
   ],
+
   "projects": [
     {
       "id": 1,
-      "title": "Customer Data Dashboard & Analytics Platform",
-      "category": "Frontend & React",
-      "categorySlug": "frontend",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-      "description": "Dasbor interaktif pengelolaan data pelanggan dengan grafik analitik visual berbasis React.js (dibuat saat magang di PT. Digdaya Olah Teknologi Indonesia), terbukti meningkatkan efisiensi pengelolaan data hingga 30%.",
+      "title": "Emigria",
+      "category": "Web Application",
+      "categorySlug": "webapp",
+      "description": "Mengembangkan Emigria, platform berbasis AI yang membantu Calon Pekerja Migran Indonesia memverifikasi lowongan kerja luar negeri dan mendeteksi potensi penipuan secara cepat melalui analisis teks serta dokumen visual.",
       "features": [
-        "Peningkatan Efisiensi Pengelolaan Data Pelanggan Sebesar 30%",
-        "Tabel Data Interaktif dengan Pencarian, Sortir, dan Filter Cepat",
-        "Visualisasi Grafik Realtime Berbasis React.js & Data Charts",
-        "Antarmuka Responsif Adaptif untuk Desktop, Tablet, dan Mobile"
+        "Verifikasi lowongan kerja luar negeri berbasis AI",
+        "Deteksi potensi penipuan dari analisis teks & dokumen visual",
+        "Integrasi backend FastAPI & database modern",
+        "Dashboard interaktif untuk monitoring keamanan kerja"
       ],
-      "techStack": [
-        "React.js",
-        "JavaScript (ES6+)",
-        "Tailwind CSS",
-        "HTML5/CSS3",
-        "REST API"
-      ],
-      "liveUrl": "https://example.com/customer-dashboard",
-      "githubUrl": "https://github.com/arsyandi/customer-data-dashboard",
-      "featured": true
+      "techStack": ["Data Analysis", "HTML", "CSS", "JavaScript", "Python", "Machine Learning", "Git", "GitHub", "ReactJS", "Docker", "FastAPI", "TensorFlow", "Express.js", "Streamlit", "Google Gemini API", "Neon Database"],
+      "image": "/foto_proyek/emigria.png",
+      "liveUrl": "https://www.emigria.my.id/",
+      "githubUrl": "https://github.com/EMIGRIA"
     },
     {
       "id": 2,
-      "title": "Landing Page Interaktif UKM (Educa Studio)",
+      "title": "ForDis App",
       "category": "Web Frontend",
       "categorySlug": "frontend",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-      "description": "Halaman arahan (landing page) responsif untuk Usaha Kecil dan Menengah (UKM) yang dibangun selama 3 bulan magang di PT. Educa Sisfomedia Indonesia dengan tata letak Bootstrap dan integrasi Scrollspy + AOS.",
+      "description": "Mengembangkan ForDis-App, aplikasi forum diskusi web real-time. Memiliki fitur utama seperti autentikasi pengguna, pembuatan thread, komentar, notifikasi, obrolan 1 lawan 1, serta sistem vote untuk menciptakan pengalaman berdiskusi yang modern dan interaktif.",
       "features": [
-        "Desain Tata Letak Responsif Berstandar Framework Bootstrap",
-        "Integrasi Scrollspy Bersama AOS (Animate On Scroll) yang Dinamis",
-        "Struktur Navigasi Intuitif dengan Skor Kecepatan Akses Tinggi",
-        "Penerapan Praktik Kode Semantik HTML5 & CSS3 Bersih"
+        "Autentikasi pengguna aman dan mudah",
+        "Pembuatan thread, komentar, dan sistem voting interaktif",
+        "Fitur obrolan real-time 1 lawan 1 dan sistem notifikasi",
+        "Antarmuka modern responsif dengan ReactJS"
       ],
-      "techStack": [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Bootstrap",
-        "AOS Library"
-      ],
-      "liveUrl": "https://example.com/ukm-landing",
-      "githubUrl": "https://github.com/arsyandi/ukm-landing-page",
-      "featured": true
+      "techStack": ["HTML", "CSS", "JavaScript", "ReactJS"],
+      "image": "/foto_proyek/ForDis-App.png",
+      "githubUrl": "https://github.com/D14M0NDS4N/ForDis-App"
     },
     {
       "id": 3,
-      "title": "Data Science & Machine Learning Capstone",
-      "category": "Data Science",
-      "categorySlug": "data",
-      "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
-      "description": "Proyek capstone pemodelan analitik data dan Machine Learning dari program Coding Camp DBS Foundation untuk pemecahan masalah bisnis nyata melalui pengolahan dan pembersihan data skala besar.",
+      "title": "AI Math App",
+      "category": "Web Application",
+      "categorySlug": "webapp",
+      "description": "Mengembangkan AI-Math-App, aplikasi belajar matematika interaktif berbasis web yang memadukan Computer Vision. Memanfaatkan webcam untuk mendeteksi gerakan tangan secara real-time, memungkinkan pengguna menjawab soal matematika lewat gerakan jari.",
       "features": [
-        "Data Wrangling & Exploratory Data Analysis (EDA) Komprehensif",
-        "Pemodelan Algoritma Machine Learning & Statistik Menggunakan Python",
-        "Visualisasi Distribusi Fitur & Korelasi Matriks Bisnis",
-        "Implementasi Kode di Lingkungan Google Colab & Jupyter Notebook"
+        "Deteksi gerakan tangan secara real-time via webcam",
+        "Latihan aritmatika interaktif dengan Computer Vision",
+        "Algoritma pengenalan gestur jari untuk menjawab soal",
+        "Pengalaman belajar matematika yang inovatif dan menyenangkan"
       ],
-      "techStack": [
-        "Python",
-        "Pandas",
-        "Scikit-Learn",
-        "Google Colab",
-        "Matplotlib"
-      ],
-      "liveUrl": "https://example.com/data-science-capstone",
-      "githubUrl": "https://github.com/arsyandi/data-science-capstone",
-      "featured": true
+      "techStack": ["HTML", "CSS", "JavaScript", "Python", "TypeScript", "React (TypeScript)", "Computer Vision", "Tailwind CSS", "Artificial Intelligence (AI)"],
+      "image": "/foto_proyek/AI-Math-App.png",
+      "githubUrl": "https://github.com/D14M0NDS4N/AI-Math-App"
     },
     {
       "id": 4,
-      "title": "Aplikasi Manajemen Tugas (To-Do List Web App)",
-      "category": "Web App",
-      "categorySlug": "webapp",
-      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
-      "description": "Aplikasi produktivitas berbasis web yang dibangun dalam program Educourse.id (Coding For Disability Program) dengan implementasi fungsi, kelas objek, penyimpanan lokal, serta pengelolaan hosting mandiri.",
+      "title": "Bank Transaction Dataset for Fraud Detection",
+      "category": "Data Science & Analyst",
+      "categorySlug": "data",
+      "description": "Mengembangkan proyek Machine Learning untuk mendeteksi anomali dan potensi penipuan pada transaksi perbankan. Menggunakan metode Clustering dan Klasifikasi untuk menganalisis data transaksi serta mengidentifikasi pola aktivitas mencurigakan secara akurat.",
       "features": [
-        "Operasi CRUD Lengkap untuk Tugas Harian (Create, Read, Update, Delete)",
-        "Penerapan Konsep OOP JavaScript (Function, Objek, dan Class)",
-        "Penyimpanan Persisten dengan LocalStorage Browser",
-        "Konfigurasi Mandiri Domain dan Deployment Hosting Web"
+        "Analisis pola transaksi perbankan skala besar",
+        "Implementasi model Clustering & Klasifikasi",
+        "Deteksi dini anomali dan aktivitas penipuan",
+        "Eksplorasi data menggunakan Jupyter Notebook / Google Colab"
       ],
-      "techStack": [
-        "JavaScript",
-        "HTML5",
-        "CSS3 / Tailwind",
-        "LocalStorage",
-        "Hosting"
-      ],
-      "liveUrl": "https://example.com/todo-app",
-      "githubUrl": "https://github.com/arsyandi/todo-management-app",
-      "featured": false
+      "techStack": ["Data Analysis", "Python", "Machine Learning", "Jupyter notebook / Google Colabs", "GitHub", "Clustering", "Classification"],
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+      "githubUrl": "https://github.com/D14M0NDS4N/Bank-Transaction-Dataset-for-Fraud-Detection"
     },
     {
       "id": 5,
-      "title": "Analisis Data Bisnis & Evaluasi Strategi UMKM",
-      "category": "Data Analyst",
+      "title": "E-Commerce Data Analysis Dashboard",
+      "category": "Data Science & Analyst",
       "categorySlug": "data",
-      "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1000&auto=format&fit=crop",
-      "description": "Studi kasus analitik bisnis di Mix Academy Batch 3 yang mengolah dan memvisualisasikan data operasional serta tren pemasaran untuk mengevaluasi strategi perkembangan UMKM.",
+      "description": "Mengembangkan proyek akhir analisis data pada E-Commerce Public Dataset. Melakukan eksplorasi data menggunakan Jupyter Notebook dan membangun dashboard visualisasi interaktif berbasis Streamlit untuk menyajikan wawasan bisnis yang jelas.",
       "features": [
-        "Teknik Pembersihan, Transformasi, dan Pengolahan Data Bisnis",
-        "Laporan Interaktif Metrik Penjualan & Evaluasi Kinerja Usaha",
-        "Analisis Kebutuhan Pemasaran & Pemecahan Masalah Operasional",
-        "Penggunaan Query SQL dan Dashboard Spreadsheet Tingkat Lanjut"
+        "Eksplorasi dan pembersihan data publik e-commerce",
+        "Visualisasi wawasan metrik bisnis utama",
+        "Dashboard interaktif berbasis web dengan Streamlit",
+        "Analisis performa penjualan dan tren pelanggan"
       ],
-      "techStack": [
-        "SQL",
-        "Microsoft Excel",
-        "Google Sheets",
-        "Visualisasi Data"
-      ],
-      "liveUrl": "https://example.com/umkm-data-analytics",
-      "githubUrl": "https://github.com/arsyandi/umkm-business-analytics",
-      "featured": false
+      "techStack": ["Data Analysis", "Data Visualization", "Streamlit", "Python", "Jupyter notebook / Google Colabs", "GitHub", "Dashboard Development"],
+      "image": "/foto_proyek/E-Commerce-Data-Analysis-Dashboard.png",
+      "liveUrl": "https://ecommerce-data-analysis-dashboard-eoi3jg5um2vrk6ihof6c4i.streamlit.app/",
+      "githubUrl": "https://github.com/D14M0NDS4N/ECommerce-Data-Analysis-Dashboard"
     },
     {
       "id": 6,
-      "title": "Visualisasi 3D Arsitektur & Desain UI/UX",
-      "category": "UI/UX & 3D",
+      "title": "Website UMKM Kuliner",
+      "category": "UI/UX Designer",
       "categorySlug": "uiux",
-      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop",
-      "description": "Kombinasi latar belakang Seni Rupa dan teknologi: rancangan desain antarmuka modern di Figma serta karya pemodelan 3D arsitektur bangunan ruko dengan SketchUp, Lumion, dan Adobe Premiere (CV. Esa Rekayasa Teknologi).",
+      "description": "Merancang desain antarmuka (UI/UX) untuk website UMKM kuliner secara lengkap. Mencakup pembuatan tata letak halaman utama (landing page), bagian produk/menu, testimoni, FAQ, hingga formulir kontak yang modern dan ramah pengguna.",
       "features": [
-        "Pemodelan 3D Bangunan Ruko Presisi Tinggi di SketchUp",
-        "Rendering Realistis & Animasi Walkthrough di Lumion",
-        "Penyuntingan Video Presentasi Proyek dengan Adobe Premiere",
-        "Rancangan UI Wireframe & Prototype Inklusif di Figma & Canva"
+        "Desain landing page kuliner yang menarik dan selera",
+        "Penyusunan tata letak menu produk dan testimoni pelanggan",
+        "Bagian FAQ informatif dan formulir kontak interaktif",
+        "Prototyping lengkap menggunakan Figma"
       ],
-      "techStack": [
-        "Figma",
-        "SketchUp",
-        "Lumion",
-        "Adobe Premiere",
-        "Canva"
+      "techStack": ["UI/UX Design", "Figma"],
+      "image": "/foto_proyek/UMKM-Kuliner.png",
+      "liveUrl": "https://www.figma.com/design/dvy6B5ctCSOsMiT5wczMGv/Website-UMKM-Kuliner?node-id=0-1&t=0UxBbVoex1A0Geiu-1",
+    },
+    {
+      "id": 7,
+      "title": "Focustalk App",
+      "category": "UI/UX Designer",
+      "categorySlug": "uiux",
+      "description": "Merancang desain antarmuka mobile (UI/UX) untuk aplikasi Focustalk sebagai proyek kuliah IT. Alur desain mencakup halaman Onboarding, Login/Sign Up, Halaman Utama (Home), statistik foki (Focus Stats), Quick Actions, hingga Overlay Quiz.",
+      "features": [
+        "Desain alur Onboarding & Autentikasi yang intuitif",
+        "Tampilan Halaman Utama & Statistik Fokus yang terstruktur",
+        "Fitur Quick Actions dan interaksi Overlay Quiz",
+        "Desain sistem seluler ramah pengguna (User-centric)"
       ],
-      "liveUrl": "https://example.com/3d-architecture",
-      "githubUrl": "https://github.com/arsyandi/3d-architecture-ui",
-      "featured": false
+      "techStack": ["UI/UX Design", "Figma"],
+      "image": "/foto_proyek/FocusTalk-App.png",
+      "liveUrl": "https://www.figma.com/design/gNPsQcteu1rUoDpPBq05Lx/PROJECT---Aplikasi-FocusTalk?t=0UxBbVoex1A0Geiu-1",
+      "githubUrl": "https://github.com/rdwnsyh/focustalk_app"
     }
   ],
+
   "services": [
     {
       "id": "web-frontend",
@@ -488,134 +462,259 @@ export const portfolioData = {
       ]
     }
   ],
+
   "certifications": [
     {
       "id": 1,
-      "title": "Sertifikasi Kompetensi Frontend Web Developer",
-      "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "BNSP-LSP-FWD-892147",
-      "image": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=1200&auto=format&fit=crop"
+      "title": "Web Frontend dengan Bootstrap",
+      "issuer": "Gamelab Indonesia",
+      "validity": "Apr 2026 - Apr 2029",
+      "credentialId": "GL5325876416",
+      "image": "/foto_sertifikat/Sertifikat-Web-Frontend-Dengan-Bootstrap.png",
+      "pdfUrl": "/certificates/Sertifikat-Web-Frontend-Dengan-Bootstrap.pdf"
     },
     {
       "id": 2,
-      "title": "Professional React Developer Certification",
-      "issuer": "Dicoding Indonesia & Meta Authorized",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "REACT-PRO-2024-783912",
-      "image": "https://images.unsplash.com/photo-1589330694653-dad6d3240a2b?q=80&w=1200&auto=format&fit=crop"
+      "title": "AI Praktis untuk Produktivitas",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Sep 2026 - Sep 2029",
+      "credentialId": "07Z6QW7JMZQR",
+      "image": "/foto_sertifikat/Sertifikat-AI-Praktis-untuk-Produktivitas.png",
+      "pdfUrl": "/certificates/Sertifikat=AI-Praktis-untuk-Produktivitas.pdf"
     },
     {
       "id": 3,
-      "title": "Certified Data Analyst Associate",
-      "issuer": "Microsoft Certified & Google Career",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "MSFT-DA-ASSOC-459021",
-      "image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Penerapan Data Science",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Sep 2026 - Sep 2029",
+      "credentialId": "NVP7J7DJVXR0",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Penerapan-Data-Science.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Penerapan-Data-Science.pdf"
     },
     {
       "id": 4,
-      "title": "JavaScript Algorithms & Data Structures",
-      "issuer": "HackerRank & FreeCodeCamp",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "HKR-JS-SPEC-902134",
-      "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Matematika untuk Data Science",
+      "issuer": "Dicoding Indonesia",
+      "validity": "May 2026 - May 2029",
+      "credentialId": "RVZK0G0MQZD5",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Matematika-untuk-Data-Science.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Matematika-untuk-Data-Science.pdf"
     },
     {
       "id": 5,
-      "title": "Responsive Web Design & Tailwind Specialist",
-      "issuer": "FreeCodeCamp & W3C Standards",
-      "validity": "2023 - 2026 (Berlaku 3 Tahun)",
-      "credentialId": "FCC-RWD-2023-671209",
-      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Fundamental Pemrosesan Data",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Apr 2026 - Apr 2029",
+      "credentialId": "JMZVO33R3XN9",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Fundamental-Pemrosesan-Data.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Fundamental-Pemrosesan-Data.pdf"
     },
     {
       "id": 6,
-      "title": "Python for Data Science & Machine Learning",
-      "issuer": "DataCamp & Kaggle Certified",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "DC-PY-ML-2024-348910",
-      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Fundamental Analisis Data",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Mar 2026 - Mar 2029",
+      "credentialId": "JLX1VWRWNZ72",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Fundamental-Analisis-Data.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Fundamental-Analisis-Data.pdf"
     },
     {
       "id": 7,
-      "title": "UI/UX Design Professional Certificate",
-      "issuer": "Google Career Certificates & Coursera",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "GOOG-UIUX-2024-118920",
-      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Machine Learning untuk Pemula",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Mar 2026 - Mar 2029",
+      "credentialId": "07Z67G9MJPQR",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Machine-Learning-untuk-Pemula.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Machine-Learning-untuk-Pemula.pdf"
     },
     {
       "id": 8,
-      "title": "Relational Database & SQL Query Mastery",
-      "issuer": "Oracle University & SoloLearn",
-      "validity": "2023 - 2026 (Berlaku 3 Tahun)",
-      "credentialId": "ORCL-SQL-2023-556102",
-      "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop"
+      "title": "Memulai Pemrograman dengan Python",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Feb 2026 - Feb 2029",
+      "credentialId": "53XE1W37KZRN",
+      "image": "/foto_sertifikat/Sertifikat-Memulai-Pemrograman-dengan-Python.png",
+      "pdfUrl": "/certificates/Sertifikat-Memulai-Pemrograman-dengan-Python.pdf"
     },
     {
       "id": 9,
-      "title": "Full-Stack Web Development with Node.js & Express",
-      "issuer": "IBM Skills Network & Coursera",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "IBM-FSW-2024-884102",
-      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+      "title": "Introduction to Financial Literacy",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Nov 2025 - Nov 2028",
+      "credentialId": "RVZKG59NQXD5",
+      "image": "/foto_sertifikat/Sertifikat-Introduction-to-Financial-Literacy.png",
+      "pdfUrl": "/certificates/Sertifikat-Introduction-to-Financial-Literacy.pdf"
     },
     {
       "id": 10,
-      "title": "Git & GitHub Professional Version Control",
-      "issuer": "GitHub Global Campus Education",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "GH-PRO-GIT-2024-663219",
-      "image": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Dasar Manajemen Proyek",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Nov 2025 - Nov 2028",
+      "credentialId": "1OP8JR3GVPQK",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Dasar-Manajemen-Proyek.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Dasar-Manajemen-Proyek.pdf"
     },
     {
       "id": 11,
-      "title": "Data Visualization & Dashboard Analytics",
-      "issuer": "Kaggle & DataCamp Certified",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "KGL-VIS-2024-991204",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Dasar Cloud dan Gen AI di AWS",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Nov 2025 - Nov 2028",
+      "credentialId": "0LZ05MOV3X65",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Dasar-Cloud-dan-Gen-AI-di-AWS.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Dasar-Cloud-dan-Gen-AI-di-AWS.pdf"
     },
     {
       "id": 12,
-      "title": "TypeScript for Professional Web Applications",
-      "issuer": "Microsoft Learn & OpenJS Foundation",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "MS-TS-2024-441208",
-      "image": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Pemrograman Prosedural dengan Python",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Oct 2025 - Oct 2028",
+      "credentialId": "6RPNG76K8Z2M",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Pemrograman-Prosedural-dengan-Python.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Pemrograman-Prosedural-dengan-Python.pdf"
     },
     {
       "id": 13,
-      "title": "Web Accessibility (WCAG 2.1) & Inclusive UI",
-      "issuer": "W3Cx & International Disability Tech",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "W3C-A11Y-2024-192837",
-      "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Dasar Visualisasi Data",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Oct 2025 - Oct 2028",
+      "credentialId": "72ZDJ2NRLZYW",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Dasar-Visualisasi-Data.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Dasar-Visualisasi-Data.pdf"
     },
     {
       "id": 14,
-      "title": "RESTful API Architecture & Postman Certified",
-      "issuer": "Postman Student Expert & Academy",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "POSTMAN-API-2024-551203",
-      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Dasar Structured Query Language (SQL)",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Oct 2025 - Oct 2028",
+      "credentialId": "07Z6J0JE2XQR",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Dasar-Structured-Query-Language-(SQL).png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Dasar-Structured-Query-Language-(SQL).pdf"
     },
     {
       "id": 15,
-      "title": "3D Architectural Modeling & Lumion Rendering",
-      "issuer": "SketchUp Certified & Lumion Pro Lab",
-      "validity": "2023 - 2026 (Berlaku 3 Tahun)",
-      "credentialId": "SKP-LUM-2023-772109",
-      "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Dasar Data Science",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Oct 2025 - Oct 2028",
+      "credentialId": "MRZMWGK6RPYQ",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Dasar-Data-Science.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Dasar-Data-Science.pdf"
     },
     {
       "id": 16,
-      "title": "Bootstrap 5 & Modern Responsive Layouts",
-      "issuer": "Educa Studio & Frontend Tech Forum",
-      "validity": "2024 - 2027 (Berlaku 3 Tahun)",
-      "credentialId": "BST-ADV-2024-331201",
-      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
+      "title": "Belajar Penggunaan Generative AI",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Sep 2025 - Sep 2028",
+      "credentialId": "98XWOVN19ZM3",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Penggunaan-Generative-AI.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Penggunaan-Generative-AI.pdf"
+    },
+    {
+      "id": 17,
+      "title": "Prompt Engineering untuk Software Developer",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Sep 2025 - Sep 2028",
+      "credentialId": "07Z6JV0D2XQR",
+      "image": "/foto_sertifikat/sertifikat-Prompt-Engineering-untuk-Software-Developer.png",
+      "pdfUrl": "/certificates/sertifikat-Prompt-Engineering-untuk-Software-Developer.pdf"
+    },
+    {
+      "id": 18,
+      "title": "Belajar Pengembangan Web Intermediate",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Jun 2025 - Jun 2028",
+      "credentialId": "98XWE31LLXM3",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Pengembangan-Web-Intermediate.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Pengembangan-Web-Intermediate.pdf"
+    },
+    {
+      "id": 19,
+      "title": "Belajar Back-End Pemula dengan JavaScript",
+      "issuer": "Dicoding Indonesia",
+      "validity": "May 2025 - May 2028",
+      "credentialId": "4EXGVL4JQXRL",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Back-End-Pemula-dengan-JavaScript.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Back-End-Pemula-dengan-JavaScript.pdf"
+    },
+    {
+      "id": 20,
+      "title": "Belajar Fundamental Front-End Web Development",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Apr 2025 - Apr 2028",
+      "credentialId": "JMZVEW3V3PN9",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Fundamental-Front-End-Web-Development.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Fundamental-Front-End-Web-Development.pdf"
+    },
+    {
+      "id": 21,
+      "title": "Financial Literacy 101",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Apr 2025 - Apr 2028",
+      "credentialId": "NVP75V224XR0",
+      "image": "/foto_sertifikat/sertifikat-Financial-Literacy-101.png",
+      "pdfUrl": "/certificates/sertifikat-Financial-Literacy-101.pdf"
+    },
+    {
+      "id": 22,
+      "title": "Belajar Membuat Front-End Web untuk Pemula",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Mar 2025 - Mar 2028",
+      "credentialId": "98XWEQGN9XM3",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Membuat-Front-End-Web-untuk-Pemula.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Membuat-Front-End-Web-untuk-Pemula.pdf"
+    },
+    {
+      "id": 23,
+      "title": "Belajar Dasar Pemrograman JavaScript",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Mar 2025 - Mar 2028",
+      "credentialId": "N9ZO9N8E6XG5",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Dasar-Pemrograman-JavaScript.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Dasar-Pemrograman-JavaScript.pdf"
+    },
+    {
+      "id": 24,
+      "title": "Belajar Dasar Pemrograman Web",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Feb 2025 - Feb 2028",
+      "credentialId": "2VX3KK15QXYQ",
+      "image": "/foto_sertifikat/sertifikat-Belajar-Dasar-Pemrograman-Web.png",
+      "pdfUrl": "/certificates/sertifikat-Belajar-Dasar-Pemrograman-Web.pdf"
+    },
+    {
+      "id": 25,
+      "title": "Belajar Dasar Git dengan GitHub",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Feb 2025 - Feb 2028",
+      "credentialId": "N9ZON3NQRXG5",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Dasar-Git-dengan-GitHub.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Dasar-Git-dengan-GitHub.pdf"
+    },
+    {
+      "id": 26,
+      "title": "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Feb 2025 - Feb 2028",
+      "credentialId": "53XE1LN2VZRN",
+      "image": "/foto_sertifikat/Sertifikat-Pengenalan-ke-Logika-Pemrograman.png",
+      "pdfUrl": "/certificates/Sertifikat-Pengenalan-ke-Logika-Pemrograman.pdf"
+    },
+    {
+      "id": 27,
+      "title": "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Feb 2025 - Feb 2028",
+      "credentialId": "RVZK09OYQZD5",
+      "image": "/foto_sertifikat/Sertifikat-Memulai-Dasar-Pemrograman-untuk-Menjadi-Pengembang-Software.png",
+      "pdfUrl": "/certificates/Sertifikat-Memulai-Dasar-Pemrograman-untuk-Menjadi-Pengembang-Software.pdf"
+    },
+    {
+      "id": 28,
+      "title": "Belajar Dasar AI",
+      "issuer": "Dicoding Indonesia",
+      "validity": "Dec 2024 - Dec 2027",
+      "credentialId": "6RPNYNO68Z2M",
+      "image": "/foto_sertifikat/Sertifikat-Belajar-Dasar-AI.png",
+      "pdfUrl": "/certificates/Sertifikat-Belajar-Dasar-AI.pdf"
     }
   ]
 };
