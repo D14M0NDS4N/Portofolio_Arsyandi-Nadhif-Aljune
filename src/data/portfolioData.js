@@ -319,40 +319,65 @@ export const portfolioData = {
       id: 1,
       title: "Sertifikasi Kompetensi Frontend Web Developer",
       issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-      status: "Masih Berlaku",
-      validity: "Berlaku s.d. 2027",
-      issuedDate: "2024",
-      image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=1000&auto=format&fit=crop",
+      validity: "2024 - 2027 (Berlaku 3 Tahun)",
       credentialId: "BNSP-LSP-FWD-892147",
-      credentialUrl: "https://example.com/credential/bnsp-fwd",
-      skills: ["HTML5", "CSS3 / Tailwind", "JavaScript (ES6+)", "Responsive Layout", "Web Accessibility (a11y)"],
-      description: "Sertifikasi standar kompetensi kerja nasional untuk rekayasa antarmuka web, penataan kode semantik, performa halaman responsif, serta kepatuhan standar aksesibilitas digital."
+      image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=1200&auto=format&fit=crop"
     },
     {
       id: 2,
       title: "Professional React Developer Certification",
-      issuer: "Dicoding Indonesia / Meta Authorized",
-      status: "Masih Berlaku",
-      validity: "Berlaku Seumur Hidup",
-      issuedDate: "2024",
-      image: "https://images.unsplash.com/photo-1589330694653-dad6d3240a2b?q=80&w=1000&auto=format&fit=crop",
+      issuer: "Dicoding Indonesia & Meta Authorized",
+      validity: "2024 - 2027 (Berlaku 3 Tahun)",
       credentialId: "REACT-PRO-2024-783912",
-      credentialUrl: "https://example.com/credential/react-pro",
-      skills: ["React.js", "State Management", "Hooks & Context", "RESTful API Integration", "SPA Optimization"],
-      description: "Sertifikasi penguasaan ekosistem React modern, component lifecycle, integrasi REST API, arsitektur Single Page Application (SPA), serta optimasi rendering antarmuka."
+      image: "https://images.unsplash.com/photo-1589330694653-dad6d3240a2b?q=80&w=1200&auto=format&fit=crop"
     },
     {
       id: 3,
       title: "Certified Data Analyst Associate",
-      issuer: "Microsoft / Google Career Certificates",
-      status: "Masih Berlaku",
-      validity: "Berlaku Seumur Hidup",
-      issuedDate: "2024",
-      image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1000&auto=format&fit=crop",
-      credentialId: "DATA-ANALYST-ASSOC-459021",
-      credentialUrl: "https://example.com/credential/data-analyst",
-      skills: ["SQL Querying", "Data Wrangling & Cleaning", "Microsoft Excel", "Google Sheets", "Visualisasi Data"],
-      description: "Sertifikasi profesional pengolahan dan visualisasi data bisnis, penguasaan query basis data relasional (SQL), serta perancangan dashboard analitik untuk evaluasi performa bisnis."
+      issuer: "Microsoft Certified & Google Career",
+      validity: "2024 - 2027 (Berlaku 3 Tahun)",
+      credentialId: "MSFT-DA-ASSOC-459021",
+      image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      id: 4,
+      title: "JavaScript Algorithms & Data Structures",
+      issuer: "HackerRank & FreeCodeCamp",
+      validity: "2024 - 2027 (Berlaku 3 Tahun)",
+      credentialId: "HKR-JS-SPEC-902134",
+      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      id: 5,
+      title: "Responsive Web Design & Tailwind Specialist",
+      issuer: "FreeCodeCamp & W3C Standards",
+      validity: "2023 - 2026 (Berlaku 3 Tahun)",
+      credentialId: "FCC-RWD-2023-671209",
+      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      id: 6,
+      title: "Python for Data Science & Machine Learning",
+      issuer: "DataCamp & Kaggle Certified",
+      validity: "2024 - 2027 (Berlaku 3 Tahun)",
+      credentialId: "DC-PY-ML-2024-348910",
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      id: 7,
+      title: "UI/UX Design Professional Certificate",
+      issuer: "Google Career Certificates & Coursera",
+      validity: "2024 - 2027 (Berlaku 3 Tahun)",
+      credentialId: "GOOG-UIUX-2024-118920",
+      image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop"
+    },
+    {
+      id: 8,
+      title: "Relational Database & SQL Query Mastery",
+      issuer: "Oracle University & SoloLearn",
+      validity: "2023 - 2026 (Berlaku 3 Tahun)",
+      credentialId: "ORCL-SQL-2023-556102",
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop"
     }
   ],
 };
