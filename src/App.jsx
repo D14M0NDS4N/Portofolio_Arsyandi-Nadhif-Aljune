@@ -5,8 +5,8 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Certifications from './components/Certifications';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
@@ -50,15 +50,15 @@ export default function App() {
       {/* Main Content Sections */}
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        
+
         <main className="flex-grow">
           <Hero data={portfolioData} onTriggerToast={triggerToast} />
           <About data={portfolioData} />
           <Skills data={portfolioData} />
           <Projects data={portfolioData} />
           <Experience data={portfolioData} />
+          <Certifications data={portfolioData} />
           <Services data={portfolioData} />
-          <Testimonials data={portfolioData} />
           <Contact data={portfolioData} onTriggerToast={triggerToast} />
         </main>
 

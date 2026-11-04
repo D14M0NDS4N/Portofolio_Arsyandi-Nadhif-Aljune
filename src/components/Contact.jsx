@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { 
-  Mail, 
-  MessageCircle, 
-  MapPin, 
-  Send, 
-  Copy, 
-  Check, 
-  Sparkles, 
-  Phone, 
+import {
+  Mail,
+  MessageCircle,
+  MapPin,
+  Send,
+  Copy,
+  Check,
+  Sparkles,
+  Phone,
   Clock,
   ArrowRight
 } from 'lucide-react';
@@ -71,7 +71,7 @@ export default function Contact({ data, onTriggerToast }) {
   return (
     <section id="contact" className="py-24 relative overflow-hidden bg-slate-100/50 dark:bg-slate-900/40 border-y border-slate-200/60 dark:border-slate-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
@@ -88,7 +88,7 @@ export default function Contact({ data, onTriggerToast }) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
+
           {/* Left Column: Direct Contacts */}
           <div className="lg:col-span-5 space-y-6">
             <div className="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
@@ -100,7 +100,7 @@ export default function Contact({ data, onTriggerToast }) {
               </p>
 
               <div className="space-y-6">
-                
+
                 {/* Email Item */}
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-2xl bg-teal-500/10 dark:bg-teal-500/20 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
@@ -184,9 +184,9 @@ export default function Contact({ data, onTriggerToast }) {
                   <div>
                     <p className="text-xs uppercase font-mono font-semibold text-slate-400">Domisili</p>
                     <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
-                      {personal.location} (Remote Friendly)
+                      {personal.location}
                     </p>
-                    <span className="text-xs text-slate-400">Siap bekerja sama secara WFH / Hybrid</span>
+                    <span className="text-xs text-slate-400">Siap bekerja sama secara Onsite / Hybrid</span>
                   </div>
                 </div>
 

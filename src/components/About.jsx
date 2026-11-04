@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  Code, 
-  Zap, 
-  Sparkles, 
-  Users, 
-  CheckCircle, 
-  Layers, 
-  ShieldCheck, 
+import {
+  Code,
+  Zap,
+  Sparkles,
+  Users,
+  CheckCircle,
+  Layers,
+  ShieldCheck,
   HeartHandshake,
   Compass,
   Palette,
@@ -43,10 +43,10 @@ export default function About({ data }) {
 
   return (
     <section id="about" className="py-24 relative overflow-hidden bg-slate-100/50 dark:bg-slate-900/40 border-y border-slate-200/60 dark:border-slate-800/60">
-      
+
       {/* Background accents */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Title */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
@@ -61,13 +61,13 @@ export default function About({ data }) {
 
         {/* Top Story & Stats Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
-          
+
           {/* Left Column: Personal Narrative */}
           <div className="lg:col-span-7 space-y-5 text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white leading-snug">
-              Web Frontend Developer & Data Analyst berlatar belakang Seni Rupa dengan ketekunan visual tinggi.
+              Frontend Developer & Data Analyst berlatar belakang Seni Rupa dengan ketekunan visual tinggi.
             </h3>
-            
+
             <p className="text-sm sm:text-base">
               Lulusan <strong className="text-teal-600 dark:text-teal-400">Diploma III Teknik Informatika (IPK 3,57)</strong> dari Universitas Logistik dan Bisnis Internasional yang memiliki keahlian dalam pengembangan web frontend dan analisis data.
             </p>
@@ -79,12 +79,16 @@ export default function About({ data }) {
             <p className="text-sm sm:text-base">
               Siap berkontribusi secara profesional dalam membangun solusi digital yang responsif, inklusif, dan bermanfaat bagi masyarakat.
             </p>
-            
+
             {/* Quick check points from CV */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm font-medium text-slate-700 dark:text-slate-200">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Web Frontend (React, Bootstrap, Tailwind)</span>
+                <span>Frontend (React, Bootstrap, Tailwind)</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-teal-500 shrink-0" />
+                <span>Backend (PHP, CodeIgniter, MySQL)</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-teal-500 shrink-0" />
@@ -92,11 +96,7 @@ export default function About({ data }) {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Desain UI/UX & Visualisasi 3D Arsitektur</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-teal-500 shrink-0" />
-                <span>Peningkatan Efisiensi Data Dashboard 30%</span>
+                <span>Desain UI/UX (Figma, Canva, Draw.io)</span>
               </div>
             </div>
           </div>
@@ -114,9 +114,6 @@ export default function About({ data }) {
                 <div className="mt-2 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200">
                   {stat.label}
                 </div>
-                <div className="mt-1 text-[11px] text-slate-400 dark:text-slate-500">
-                  Tercatat Resmi di CV ATS
-                </div>
               </div>
             ))}
           </div>
@@ -126,7 +123,7 @@ export default function About({ data }) {
         {/* Soft Skills & Languages Section */}
         <div className="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            
+
             {/* Non-Technical Skills */}
             <div>
               <div className="flex items-center gap-2 text-sm font-mono font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider mb-4">

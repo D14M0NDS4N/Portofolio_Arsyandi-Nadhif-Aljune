@@ -1,26 +1,26 @@
 import React, { useState, useMemo } from 'react';
-import { 
-  Code2, 
-  Layers, 
-  Wrench, 
-  Search, 
-  Cpu, 
-  Atom, 
-  Paintbrush, 
-  Layout, 
-  FileCode, 
-  Globe, 
-  Boxes, 
-  Server, 
-  Network, 
-  Database, 
-  GitBranch, 
-  Zap, 
-  PenTool, 
-  Send, 
-  Container, 
-  Terminal, 
-  Cloud 
+import {
+  Code2,
+  Layers,
+  Wrench,
+  Search,
+  Cpu,
+  Atom,
+  Paintbrush,
+  Layout,
+  FileCode,
+  Globe,
+  Boxes,
+  Server,
+  Network,
+  Database,
+  GitBranch,
+  Zap,
+  PenTool,
+  Send,
+  Container,
+  Terminal,
+  Cloud
 } from 'lucide-react';
 
 const iconMap = {
@@ -54,6 +54,7 @@ export default function Skills({ data }) {
       ...(data.skills.frontend || []),
       ...(data.skills.backend || []),
       ...(data.skills.dataAnalyst || []),
+      ...(data.skills.uiuxdesign || []),
       ...(data.skills.tools || [])
     ];
   }, [data.skills]);
@@ -67,6 +68,8 @@ export default function Skills({ data }) {
       result = data.skills.backend || [];
     } else if (activeTab === 'dataAnalyst') {
       result = data.skills.dataAnalyst || [];
+    } else if (activeTab === 'uiuxdesign') {
+      result = data.skills.uiuxdesign || [];
     } else if (activeTab === 'tools') {
       result = data.skills.tools || [];
     }
@@ -84,7 +87,7 @@ export default function Skills({ data }) {
   return (
     <section id="skills" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center mb-14">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
@@ -102,31 +105,30 @@ export default function Skills({ data }) {
 
         {/* Filters & Search Toolbar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-10">
-          
+
           {/* Tabs */}
           <div className="flex flex-wrap items-center gap-1.5 p-1.5 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
             {[
               { id: 'all', label: 'Semua Stack', count: allSkills.length },
               { id: 'frontend', label: 'Frontend', count: data.skills.frontend?.length || 0 },
               { id: 'backend', label: 'Backend & DB', count: data.skills.backend?.length || 0 },
-              { id: 'dataAnalyst', label: 'Data Analyst & AI', count: data.skills.dataAnalyst?.length || 0 },
-              { id: 'tools', label: 'UI/UX & Tools', count: data.skills.tools?.length || 0 },
+              { id: 'dataAnalyst', label: 'Data Analyst', count: data.skills.dataAnalyst?.length || 0 },
+              { id: 'uiuxdesign', label: 'UI/UX Designer', count: data.skills.uiuxdesign?.length || 0 },
+              { id: 'tools', label: 'Tools', count: data.skills.tools?.length || 0 },
             ].map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-2 ${
-                  activeTab === tab.id
-                    ? 'bg-teal-500 text-white shadow-md shadow-teal-500/30'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800'
-                }`}
+                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-2 ${activeTab === tab.id
+                  ? 'bg-teal-500 text-white shadow-md shadow-teal-500/30'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800'
+                  }`}
               >
                 <span>{tab.label}</span>
-                <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
-                  activeTab === tab.id 
-                    ? 'bg-white/20 text-white' 
-                    : 'bg-slate-200 dark:bg-slate-800 text-slate-500'
-                }`}>
+                <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${activeTab === tab.id
+                  ? 'bg-white/20 text-white'
+                  : 'bg-slate-200 dark:bg-slate-800 text-slate-500'
+                  }`}>
                   {tab.count}
                 </span>
               </button>

@@ -10,7 +10,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'services', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'certifications', 'services', 'contact'];
       const scrollPosition = window.scrollY + 120;
 
       for (const section of sections) {
@@ -36,6 +36,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
     { name: 'Keahlian', href: '#skills', id: 'skills' },
     { name: 'Proyek', href: '#projects', id: 'projects' },
     { name: 'Pengalaman', href: '#experience', id: 'experience' },
+    { name: 'Sertifikasi', href: '#certifications', id: 'certifications' },
     { name: 'Layanan', href: '#services', id: 'services' },
     { name: 'Kontak', href: '#contact', id: 'contact' },
   ];

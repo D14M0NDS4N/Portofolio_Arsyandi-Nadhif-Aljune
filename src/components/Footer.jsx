@@ -12,9 +12,9 @@ export default function Footer({ data }) {
   return (
     <footer className="relative bg-white dark:bg-[#060a14] border-t border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        
+
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-slate-100 dark:border-slate-800/80">
-          
+
           {/* Logo & Tagline */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <a href="#hero" className="flex items-center gap-2 text-xl font-bold tracking-tight text-slate-900 dark:text-white">
@@ -28,7 +28,7 @@ export default function Footer({ data }) {
             <p className="mt-2 text-sm max-w-sm text-slate-500 dark:text-slate-400">
               {personal.tagline}
             </p>
-            
+
             {/* Social Icons in Footer */}
             <div className="flex items-center gap-2.5 mt-4">
               <a
@@ -75,6 +75,7 @@ export default function Footer({ data }) {
             <a href="#skills" className="hover:text-teal-500 transition-colors">Keahlian</a>
             <a href="#projects" className="hover:text-teal-500 transition-colors">Proyek</a>
             <a href="#experience" className="hover:text-teal-500 transition-colors">Pengalaman</a>
+            <a href="#certifications" className="hover:text-teal-500 transition-colors">Sertifikasi</a>
             <a href="#services" className="hover:text-teal-500 transition-colors">Layanan</a>
             <a href="#contact" className="hover:text-teal-500 transition-colors">Kontak</a>
           </div>
@@ -91,14 +92,8 @@ export default function Footer({ data }) {
         </div>
 
         {/* Bottom Bar: Copyright & Tech Attribution */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} {personal.fullName}. Hak Cipta Dilindungi.</p>
-          
-          <div className="flex items-center gap-1.5">
-            <span>Dibuat dengan</span>
-            <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 inline" />
-            <span>menggunakan React.js & Tailwind CSS.</span>
-          </div>
         </div>
 
       </div>

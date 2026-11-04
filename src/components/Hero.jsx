@@ -58,8 +58,8 @@ export default function Hero({ data, onTriggerToast }) {
     onTriggerToast('Mengunduh CV ATS - Arsyandi Nadhif Aljune...', 'success');
 
     // Generate comprehensive ATS CV matching the user's PDF
-    const atsCVContent = 
-`ARSYANDI NADHIF ALJUNE
+    const atsCVContent =
+      `ARSYANDI NADHIF ALJUNE
 ${personal.email} | ${personal.whatsapp} | ${personal.linkedin}
 
 ================================================================================
@@ -100,29 +100,29 @@ PENGALAMAN MAGANG
 ================================================================================
 PENGALAMAN PELATIHAN & SERTIFIKASI
 ================================================================================
-• Data Scientist Cohort                                    Februari, 2026 - Juli, 2026
-  Coding Camp 2026 powered by DBS Foundation, Indonesia
-  - Mempelajari pengolahan, pembersihan, dan analisis data (Data Wrangling & Exploratory Data Analysis).
-  - Menguasai pembuatan model Machine Learning dan statistik menggunakan Python.
-  - Mengembangkan proyek nyata dan kapabilitas problem solving berbasis data melalui capstone project.
-
-• Front-End and Backend Developer Cohort                   Februari, 2025 - Juli, 2025
-  Coding Camp 2025 powered by DBS Foundation, Indonesia
-  - Mempelajari pengembangan frontend yang interaktif dan responsif untuk aplikasi web.
-  - Menguasai pengembangan backend, manajemen database, serta integrasi API.
-  - Mengembangkan kemampuan pemrograman web secara utuh dari sisi klien hingga peladen (full-stack).
-
 • Data Analyst                                             September, 2026 - November, 2026
   Mix Academy Batch 3
   - Mempelajari teknik pengolahan, pembersihan, dan analisis data bisnis.
   - Menguasai pembuatan laporan serta visualisasi data untuk evaluasi dan strategi usaha.
   - Mengembangkan keterampilan analitis dalam memecahkan masalah operasional dan pemasaran UMKM.
 
+• Data Scientist Cohort                                    Februari, 2026 - Juli, 2026
+  Coding Camp 2026 powered by DBS Foundation, Indonesia
+  - Mempelajari pengolahan, pembersihan, dan analisis data (Data Wrangling & Exploratory Data Analysis).
+  - Menguasai pembuatan model Machine Learning dan statistik menggunakan Python.
+  - Mengembangkan proyek nyata dan kapabilitas problem solving berbasis data melalui capstone project.
+
 • Web Frontend dengan Bootstrap                            April, 2026 - April, 2026
   PT. Educa Sisfomedia Indonesia (Educa Studio) - Salatiga, Jawa Tengah
   - Memahami penggunaan komponen dan sistem grid Bootstrap.
   - Membuat desain halaman web yang responsive di berbagai ukuran layar.
   - Mengembangkan keterampilan praktis pengembangan frontend untuk proyek web dan landing page.
+
+• Front-End and Backend Developer Cohort                   Februari, 2025 - Juli, 2025
+  Coding Camp 2025 powered by DBS Foundation, Indonesia
+  - Mempelajari pengembangan frontend yang interaktif dan responsif untuk aplikasi web.
+  - Menguasai pengembangan backend, manajemen database, serta integrasi API.
+  - Mengembangkan kemampuan pemrograman web secara utuh dari sisi klien hingga peladen (full-stack).
 
 • Coding For Disability Program - JavaScript Course        Agustus, 2024 - Oktober, 2024
   Educourse.id
@@ -227,14 +227,6 @@ BAHASA
                 <span>Lihat Karya & Proyek</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
-
-              <button
-                onClick={handleDownloadCV}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-800/90 hover:bg-slate-100 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 shadow-md shadow-black/5 transition-all duration-300 hover:-translate-y-0.5"
-              >
-                <Download className="w-4 h-4 text-teal-500" />
-                <span>Unduh CV (Resume)</span>
-              </button>
             </div>
 
             {/* Social Media Links & Fast Contact */}
@@ -309,7 +301,7 @@ BAHASA
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-[11px] font-mono text-slate-400 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">
                   <Terminal className="w-3 h-3 text-teal-400" />
-                  <span>arsyandina@gmail.com</span>
+                  <span>massandi2010@gmail.com</span>
                 </div>
               </div>
 
@@ -339,9 +331,9 @@ BAHASA
                   </div>
 
                   {/* Floating Mini Badge */}
-                  <div className="absolute -bottom-2 -right-2 px-2.5 py-1 rounded-lg bg-teal-500 text-white font-mono text-[11px] font-bold shadow-md flex items-center gap-1">
+                  <div className="absolute -bottom-3 -right-6 px-2.5 py-1 rounded-lg bg-teal-500 text-white font-mono text-[11px] font-bold shadow-md flex items-center gap-1">
                     <CheckCircle2 className="w-3 h-3" />
-                    <span>Verified</span>
+                    <span>Disabilitas Tuli</span>
                   </div>
                 </div>
 
@@ -356,27 +348,12 @@ BAHASA
                 <div className="w-full mt-5 p-3.5 rounded-xl bg-slate-950 text-left font-mono text-xs text-slate-300 border border-slate-800 shadow-inner overflow-hidden">
                   <div className="text-teal-400 font-semibold mb-1">// Profil Pengembang</div>
                   <div className="text-slate-400">const arsyandi = &#123;</div>
-                  <div className="pl-4 text-emerald-400">alumnus: <span className="text-amber-300">'D3 TI (ULBI)'</span>,</div>
+                  <div className="pl-4 text-emerald-400">alumnus: <span className="text-amber-300">'D3 Teknik Informatika (ULBI)'</span>,</div>
                   <div className="pl-4 text-emerald-400">ipk: <span className="text-cyan-300">'3.57'</span>,</div>
-                  <div className="pl-4 text-emerald-400">spesialisasi: <span className="text-amber-300">'Frontend & Data'</span>,</div>
+                  <div className="pl-4 text-emerald-400">spesialisasi: <span className="text-amber-300">'Frontend Developer'</span>,</div>
                   <div className="pl-4 text-emerald-400">orientasiDetail: <span className="text-cyan-300">true</span></div>
                   <div className="text-slate-400">&#125;;</div>
                 </div>
-
-                {/* Key Stats Counter Grid */}
-                <div className="w-full grid grid-cols-2 gap-3 mt-5">
-                  {personal.stats.slice(0, 2).map((item, idx) => (
-                    <div key={idx} className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-800 text-center">
-                      <div className="text-2xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">
-                        {item.value}
-                      </div>
-                      <div className="text-[11px] font-medium text-slate-500 dark:text-slate-400 mt-0.5">
-                        {item.label}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
               </div>
 
             </div>

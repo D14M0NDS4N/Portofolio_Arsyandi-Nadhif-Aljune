@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { 
-  Briefcase, 
-  GraduationCap, 
-  Award, 
-  Calendar, 
-  Building2, 
-  MapPin, 
-  CheckCircle2, 
+import {
+  Briefcase,
+  GraduationCap,
+  Award,
+  Calendar,
+  Building2,
+  MapPin,
+  CheckCircle2,
   Sparkles,
   BookOpen
 } from 'lucide-react';
@@ -17,7 +17,7 @@ export default function Experience({ data }) {
   return (
     <section id="experience" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center mb-14">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
@@ -38,11 +38,10 @@ export default function Experience({ data }) {
           <div className="inline-flex flex-wrap items-center justify-center gap-1 p-1.5 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
             <button
               onClick={() => setActiveTab('magang')}
-              className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
-                activeTab === 'magang'
+              className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all ${activeTab === 'magang'
                   ? 'bg-teal-500 text-white shadow-md shadow-teal-500/20'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
+                }`}
             >
               <Briefcase className="w-4 h-4" />
               <span>Pengalaman Magang</span>
@@ -53,14 +52,13 @@ export default function Experience({ data }) {
 
             <button
               onClick={() => setActiveTab('pelatihan')}
-              className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
-                activeTab === 'pelatihan'
+              className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all ${activeTab === 'pelatihan'
                   ? 'bg-teal-500 text-white shadow-md shadow-teal-500/20'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
+                }`}
             >
               <Award className="w-4 h-4" />
-              <span>Pelatihan & Sertifikasi</span>
+              <span>Pengalaman Pelatihan</span>
               <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${activeTab === 'pelatihan' ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-800 text-slate-500'}`}>
                 {data.trainings?.length || 7}
               </span>
@@ -68,11 +66,10 @@ export default function Experience({ data }) {
 
             <button
               onClick={() => setActiveTab('pendidikan')}
-              className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all ${
-                activeTab === 'pendidikan'
+              className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all ${activeTab === 'pendidikan'
                   ? 'bg-teal-500 text-white shadow-md shadow-teal-500/20'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
+                }`}
             >
               <GraduationCap className="w-4 h-4" />
               <span>Pendidikan</span>
@@ -82,7 +79,7 @@ export default function Experience({ data }) {
 
         {/* Timeline Content */}
         <div className="max-w-3xl mx-auto">
-          
+
           {/* TAB 1: PENGALAMAN MAGANG */}
           {activeTab === 'magang' && (
             <div className="relative pl-6 sm:pl-8 border-l-2 border-teal-500/30 dark:border-teal-500/20 space-y-10 animate-fade-in">
@@ -106,7 +103,7 @@ export default function Experience({ data }) {
                     <h3 className="text-xl font-bold text-slate-900 dark:text-white mt-1">
                       {item.role}
                     </h3>
-                    
+
                     <div className="flex flex-wrap items-center gap-y-1 gap-x-4 text-sm font-medium text-slate-500 dark:text-slate-400 mt-1 mb-3.5">
                       <div className="flex items-center gap-1.5">
                         <Building2 className="w-4 h-4 text-teal-500" />
@@ -161,7 +158,7 @@ export default function Experience({ data }) {
                     <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mt-1">
                       {item.title}
                     </h3>
-                    
+
                     <div className="flex items-center gap-1.5 text-sm font-semibold text-teal-600 dark:text-teal-400 mt-1 mb-3">
                       <Award className="w-4 h-4 text-cyan-500 shrink-0" />
                       <span>{item.organizer}</span>
@@ -201,7 +198,7 @@ export default function Experience({ data }) {
                     <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                       {item.degree}
                     </h3>
-                    
+
                     <div className="flex items-center gap-2 text-base font-semibold text-slate-700 dark:text-slate-200 mt-1 mb-4">
                       <GraduationCap className="w-5 h-5 text-teal-500" />
                       <span>{item.institution}</span>

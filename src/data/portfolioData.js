@@ -4,27 +4,26 @@ export const portfolioData = {
     fullName: "Arsyandi Nadhif Aljune",
     avatar: "/IMG_5508.JPG",
     roles: [
-      "Web Frontend Developer",
-      "Frontend Engineer",
+      "Frontend Developer",
       "UI/UX Designer",
       "Data Analyst"
     ],
     tagline: "Membangun Solusi Digital yang Responsif, Inklusif, dan Bermanfaat.",
     bio: "Lulusan Diploma III Teknik Informatika (IPK 3,57) yang memiliki keahlian dalam pengembangan web frontend dan analisis data. Memiliki latar belakang di bidang Seni Rupa yang memperkuat kepekaan desain antarmuka (UI/UX) dan estetika visual. Sebagai seorang Tuli dengan kemampuan belajar visual yang kuat, saya dikenal sebagai pribadi yang tekun, adaptif, serta berorientasi pada detail. Siap berkontribusi secara profesional dalam membangun solusi digital yang responsif, inklusif, dan bermanfaat bagi masyarakat.",
-    location: "Indonesia",
+    location: "Bandung, Jawa Barat",
     status: "Tersedia untuk Magang & Full-time",
     email: "massandi2010@gmail.com",
     whatsapp: "+6285186142435",
     whatsappDisplay: "+62 851-8614-2435",
     linkedin: "https://www.linkedin.com/in/arsyandina",
     linkedinDisplay: "linkedin.com/in/arsyandina",
-    github: "https://github.com",
-    instagram: "https://instagram.com",
+    github: "https://github.com/D14M0NDS4N",
+    instagram: "https://instagram.com/arsyandina",
     stats: [
-      { label: "IPK Kelulusan (ULBI)", value: "3.57" },
-      { label: "Pengalaman Magang", value: "3 Perusahaan" },
-      { label: "Pelatihan & Sertifikasi", value: "7 Program" },
-      { label: "Efisiensi Data", value: "+30%" },
+      { label: "Proyek", value: "7" },
+      { label: "Pengalaman Magang", value: "3" },
+      { label: "Pengalaman Pelatihan", value: "7" },
+      { label: "Sertifikasi", value: "31" },
     ],
     languages: [
       { name: "Bahasa Indonesia", level: "Fasih" },
@@ -45,10 +44,10 @@ export const portfolioData = {
   skills: {
     frontend: [
       { name: "React.js", level: 90, category: "Frontend", icon: "Atom" },
-      { name: "JavaScript (ES6+)", level: 92, category: "Frontend", icon: "Code2" },
+      { name: "JavaScript", level: 80, category: "Frontend", icon: "Code2" },
       { name: "Tailwind CSS", level: 92, category: "Frontend", icon: "Paintbrush" },
       { name: "Bootstrap", level: 95, category: "Frontend", icon: "Layout" },
-      { name: "HTML5 & CSS3", level: 96, category: "Frontend", icon: "Layout" },
+      { name: "HTML & CSS", level: 96, category: "Frontend", icon: "Layout" },
       { name: "Dart", level: 75, category: "Frontend", icon: "FileCode" }
     ],
     backend: [
@@ -64,17 +63,16 @@ export const portfolioData = {
       { name: "Google Colab", level: 86, category: "Data Analyst", icon: "Cpu" },
       { name: "Microsoft Excel", level: 92, category: "Data Analyst", icon: "FileCode" },
       { name: "Google Sheets", level: 90, category: "Data Analyst", icon: "FileCode" },
-      { name: "Data Wrangling & EDA", level: 85, category: "Data Analyst", icon: "Boxes" },
-      { name: "Machine Learning Basics", level: 80, category: "Data Analyst", icon: "Atom" }
+    ],
+    uiuxdesign: [
+      { name: "Figma", level: 92, category: "UI/UX", icon: "PenTool" },
+      { name: "Draw.io", level: 90, category: "UI/UX", icon: "PenTool" },
+      { name: "Canva", level: 90, category: "UI/UX", icon: "PenTool" },
     ],
     tools: [
-      { name: "Figma (UI/UX)", level: 92, category: "UI/UX & Tools", icon: "PenTool" },
-      { name: "Draw.io & Canva", level: 90, category: "UI/UX & Tools", icon: "PenTool" },
-      { name: "Git & GitHub", level: 88, category: "UI/UX & Tools", icon: "GitBranch" },
-      { name: "SketchUp & Lumion (3D)", level: 85, category: "3D Visualizer", icon: "Boxes" },
-      { name: "Adobe Premiere", level: 82, category: "Multimedia", icon: "Zap" },
-      { name: "VS Code & Terminal", level: 95, category: "Tools", icon: "Terminal" }
-    ]
+      { name: "GitHub", level: 92, category: "Tools", icon: "GitBranch" },
+      { name: "Visual Studio Code", level: 90, category: "Tools", icon: "Code2" },
+    ],
   },
 
   experiences: [
@@ -131,18 +129,6 @@ export const portfolioData = {
 
   trainings: [
     {
-      period: "Februari, 2026 - Juli, 2026",
-      title: "Data Scientist Cohort",
-      organizer: "Coding Camp 2026 powered by DBS Foundation, Indonesia",
-      description: "Mempelajari pengolahan, pembersihan, dan analisis data (Data Wrangling & Exploratory Data Analysis). Menguasai pembuatan model Machine Learning dan statistik menggunakan Python. Mengembangkan proyek nyata dan kapabilitas problem solving berbasis data melalui capstone project."
-    },
-    {
-      period: "Februari, 2025 - Juli, 2025",
-      title: "Front-End and Backend Developer Cohort",
-      organizer: "Coding Camp 2025 powered by DBS Foundation, Indonesia",
-      description: "Mempelajari pengembangan frontend yang interaktif dan responsif untuk aplikasi web. Menguasai pengembangan backend, manajemen database, serta integrasi API. Mengembangkan kemampuan pemrograman web secara utuh dari sisi klien hingga peladen (full-stack)."
-    },
-    {
       period: "September, 2026 - November, 2026",
       title: "Data Analyst",
       organizer: "Mix Academy Batch 3",
@@ -153,6 +139,18 @@ export const portfolioData = {
       title: "Web Frontend dengan Bootstrap",
       organizer: "PT. Educa Sisfomedia Indonesia (Educa Studio) - Salatiga, Jawa Tengah",
       description: "Memahami penggunaan komponen dan sistem grid Bootstrap. Membuat desain halaman web yang responsive di berbagai ukuran layar. Mengembangkan keterampilan praktis pengembangan frontend untuk proyek web dan landing page."
+    },
+    {
+      period: "Februari, 2026 - Juli, 2026",
+      title: "Data Scientist Cohort",
+      organizer: "Coding Camp 2026 powered by DBS Foundation, Indonesia",
+      description: "Mempelajari pengolahan, pembersihan, dan analisis data (Data Wrangling & Exploratory Data Analysis). Menguasai pembuatan model Machine Learning dan statistik menggunakan Python. Mengembangkan proyek nyata dan kapabilitas problem solving berbasis data melalui capstone project."
+    },
+    {
+      period: "Februari, 2025 - Juli, 2025",
+      title: "Front-End and Backend Developer Cohort",
+      organizer: "Coding Camp 2025 powered by DBS Foundation, Indonesia",
+      description: "Mempelajari pengembangan frontend yang interaktif dan responsif untuk aplikasi web. Menguasai pengembangan backend, manajemen database, serta integrasi API. Mengembangkan kemampuan pemrograman web secara utuh dari sisi klien hingga peladen (full-stack)."
     },
     {
       period: "Agustus, 2024 - Oktober, 2024",
@@ -316,30 +314,97 @@ export const portfolioData = {
     }
   ],
 
-  testimonials: [
+  certifications: [
     {
       id: 1,
-      name: "Pembimbing Magang",
-      role: "Lead Tech, PT. Digdaya Olah Teknologi Indonesia",
-      content: "Arsyandi menunjukkan ketelitian dan ketekunan yang sangat tinggi selama magang. Dasbor pelanggan berbasis React.js yang dibangunnya berhasil mempercepat pengelolaan data kami hingga 30%. Pembelajar visual yang sangat tangguh!",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      title: "Data Scientist Cohort",
+      issuer: "Coding Camp powered by DBS Foundation, Indonesia",
+      issuerLogo: "DBS Foundation",
+      category: "Data Science & AI",
+      period: "Februari, 2026 - Juli, 2026",
+      image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=1000&auto=format&fit=crop",
+      credentialId: "DBS-DS-2026-ARSYANDI",
+      credentialUrl: "https://example.com/credential/dbs-ds-2026",
+      skills: ["Data Wrangling", "Exploratory Data Analysis", "Machine Learning", "Python", "Capstone Project"],
+      description: "Mempelajari pengolahan, pembersihan, dan analisis data (Data Wrangling & Exploratory Data Analysis). Menguasai pembuatan model Machine Learning dan statistik menggunakan Python, serta menyelesaikan capstone project nyata berbasis data."
     },
     {
       id: 2,
-      name: "Mentor Proyek",
-      role: "Project Manager, PT. Educa Sisfomedia Indonesia",
-      content: "Dedikasi Arsyandi dalam merancang landing page UKM dengan Bootstrap dan AOS patut diacungi jempol. Hasil karyanya rapi, responsif, dan memperhatikan setiap detail animasi dengan baik.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop"
+      title: "Front-End and Backend Developer Cohort",
+      issuer: "Coding Camp powered by DBS Foundation, Indonesia",
+      issuerLogo: "DBS Foundation",
+      category: "Full-Stack Web",
+      period: "Februari, 2025 - Juli, 2025",
+      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1000&auto=format&fit=crop",
+      credentialId: "DBS-FED-2025-ARSYANDI",
+      credentialUrl: "https://example.com/credential/dbs-fed-2025",
+      skills: ["React.js", "Full-Stack Web", "Database Management", "REST API", "Backend Integration"],
+      description: "Mempelajari pengembangan frontend interaktif dan responsif untuk aplikasi web, manajemen database, serta integrasi API secara utuh dari sisi klien hingga peladen (full-stack)."
     },
     {
       id: 3,
-      name: "Instruktur Coding Camp",
-      role: "Mentor, DBS Foundation Coding Camp",
-      content: "Kemampuan analisis Arsyandi dalam proyek Data Science dan frontend sangat solid. Pribadi yang santun, adaptif, solutif dalam pemecahan masalah, dan selalu berorientasi pada kualitas.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      title: "Data Analyst Professional Training",
+      issuer: "Mix Academy Batch 3",
+      issuerLogo: "Mix Academy",
+      category: "Data Analytics",
+      period: "September, 2026 - November, 2026",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+      credentialId: "MIX-DA3-2026-ARSYANDI",
+      credentialUrl: "https://example.com/credential/mix-da3",
+      skills: ["SQL", "Microsoft Excel", "Google Sheets", "Business Intelligence", "Strategi UMKM"],
+      description: "Mempelajari teknik pengolahan, pembersihan, dan analisis data bisnis komprehensif, menguasai pembuatan laporan serta visualisasi data untuk evaluasi dan strategi operasional usaha UMKM."
+    },
+    {
+      id: 4,
+      title: "Web Frontend dengan Bootstrap",
+      issuer: "PT. Educa Sisfomedia Indonesia (Educa Studio)",
+      issuerLogo: "Educa Studio",
+      category: "Frontend Web",
+      period: "April, 2026 - April, 2026",
+      image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1000&auto=format&fit=crop",
+      credentialId: "EDUCA-BST-2026-ARSYANDI",
+      credentialUrl: "https://example.com/credential/educa-bst-2026",
+      skills: ["Bootstrap Grid", "Responsive Design", "Landing Page", "HTML5/CSS3"],
+      description: "Memahami penggunaan komponen dan sistem grid Bootstrap, merancang desain halaman web responsif lintas perangkat, dan mengembangkan keterampilan praktis frontend untuk landing page."
+    },
+    {
+      id: 5,
+      title: "Coding For Disability Program - JavaScript Course",
+      issuer: "Educourse.id",
+      issuerLogo: "Educourse.id",
+      category: "JavaScript Programming",
+      period: "Agustus, 2024 - Oktober, 2024",
+      image: "https://images.unsplash.com/photo-1589330694653-dad6d3240a2b?q=80&w=1000&auto=format&fit=crop",
+      credentialId: "EDU-CFD-2024-ARSYANDI",
+      credentialUrl: "https://example.com/credential/educourse-js",
+      skills: ["JavaScript ES6+", "Data Structures", "OOP & Functions", "Domain & Hosting"],
+      description: "Mempelajari dasar pemrograman JavaScript, struktur data, fungsi, objek, kelas, serta mengimplementasikannya dalam proyek aplikasi To-Do List dan pengelolaan domain serta hosting mandiri."
+    },
+    {
+      id: 6,
+      title: "Web Development Deaf to Dev",
+      issuer: "Deaf to Dev x Tokopedia Academy",
+      issuerLogo: "Tokopedia Academy",
+      category: "Frontend Web",
+      period: "Mei, 2024 - Mei, 2024",
+      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000&auto=format&fit=crop",
+      credentialId: "TKPD-D2D-2024-ARSYANDI",
+      credentialUrl: "https://example.com/credential/tokopedia-d2d",
+      skills: ["HTML5", "CSS3", "Bootstrap", "Aksesibilitas Web", "Portofolio Pribadi"],
+      description: "Program intensif pengembangan web bagi penyandang disabilitas Tuli yang berfokus pada struktur HTML, styling CSS modern, framework Bootstrap, dan pembuatan portofolio responsif."
+    },
+    {
+      id: 7,
+      title: "Junior Web Programming",
+      issuer: "Yayasan Plan International Indonesia",
+      issuerLogo: "Plan International",
+      category: "Web Programming",
+      period: "Juli, 2022 - Desember, 2022",
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1000&auto=format&fit=crop",
+      credentialId: "PLAN-JWP-2022-ARSYANDI",
+      credentialUrl: "https://example.com/credential/plan-jwp",
+      skills: ["HTML5", "CSS3 Layout", "Web Semantics", "Desain Antarmuka"],
+      description: "Mempelajari dasar struktur halaman web HTML, penataan gaya dan tata letak CSS modern, serta menerapkan materi ke dalam proyek pembuatan web untuk menampilkan hasil karya mandiri."
     }
-  ]
+  ],
 };

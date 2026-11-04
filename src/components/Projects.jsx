@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { 
-  FolderGit2, 
-  ExternalLink, 
-  Eye, 
+import {
+  FolderGit2,
+  ExternalLink,
+  Eye,
   Sparkles,
   ArrowUpRight
 } from 'lucide-react';
@@ -16,9 +16,9 @@ export default function Projects({ data }) {
   const categories = [
     { id: 'all', label: 'Semua Proyek' },
     { id: 'frontend', label: 'Web Frontend' },
-    { id: 'data', label: 'Data Science & Analyst' },
     { id: 'webapp', label: 'Web Application' },
-    { id: 'uiux', label: 'UI/UX & 3D' },
+    { id: 'data', label: 'Data Science & Analyst' },
+    { id: 'uiux', label: 'UI/UX Designer' },
   ];
 
   const filteredProjects = useMemo(() => {
@@ -29,7 +29,7 @@ export default function Projects({ data }) {
   return (
     <section id="projects" className="py-24 relative overflow-hidden bg-slate-100/50 dark:bg-slate-900/40 border-y border-slate-200/60 dark:border-slate-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center mb-14">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-mono font-semibold uppercase tracking-wider mb-3">
@@ -37,7 +37,7 @@ export default function Projects({ data }) {
             <span>Karya Terpilih</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Portofolio & <span className="bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">Proyek Terbaru</span>
+            Portofolio & <span className="bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">Proyek</span>
           </h2>
           <p className="max-w-xl text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-3">
             Berikut beberapa proyek web unggulan yang telah saya kerjakan dengan fokus pada performa, arsitektur bersih, dan pengalaman pengguna memuaskan.
@@ -51,11 +51,10 @@ export default function Projects({ data }) {
             <button
               key={cat.id}
               onClick={() => setFilter(cat.id)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
-                filter === cat.id
-                  ? 'bg-teal-500 text-white shadow-lg shadow-teal-500/30 scale-105'
-                  : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/80'
-              }`}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${filter === cat.id
+                ? 'bg-teal-500 text-white shadow-lg shadow-teal-500/30 scale-105'
+                : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700/80'
+                }`}
             >
               {cat.label}
             </button>
@@ -77,7 +76,7 @@ export default function Projects({ data }) {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
                 />
-                
+
                 {/* Overlay with buttons on hover */}
                 <div className="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 backdrop-blur-xs">
                   <button
@@ -118,14 +117,14 @@ export default function Projects({ data }) {
               {/* Card Body */}
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 
+                  <h3
                     onClick={() => setSelectedProject(project)}
                     className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-colors cursor-pointer flex items-center justify-between gap-2"
                   >
                     <span>{project.title}</span>
                     <ArrowUpRight className="w-5 h-5 shrink-0 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-teal-500" />
                   </h3>
-                  
+
                   <p className="text-sm text-slate-600 dark:text-slate-400 mt-2.5 line-clamp-2 leading-relaxed">
                     {project.description}
                   </p>
