@@ -7,22 +7,38 @@ import {
   Building2, 
   Copy, 
   Check, 
-  ExternalLink,
-  Maximize2
+  Maximize2,
+  ChevronDown,
+  ChevronUp
 } from 'lucide-react';
 import CertificateModal from './CertificateModal';
 
 export default function Certifications({ data }) {
   const [selectedCert, setSelectedCert] = useState(null);
   const [copiedId, setCopiedId] = useState(null);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const certs = data.certifications || [];
+  const INITIAL_ITEMS = 8; // 2 baris (masing-masing 4 kolom)
+  const visibleCerts = isExpanded ? certs : certs.slice(0, INITIAL_ITEMS);
 
   const handleCopyId = (e, id) => {
     e.stopPropagation();
     navigator.clipboard.writeText(id);
     setCopiedId(id);
     setTimeout(() => setCopiedId(null), 2000);
+  };
+
+  const handleToggleExpand = () => {
+    if (isExpanded) {
+      setIsExpanded(false);
+      const section = document.getElementById('certifications');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      setIsExpanded(true);
+    }
   };
 
   return (
@@ -46,10 +62,10 @@ export default function Certifications({ data }) {
 
         {/* 4-Column Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {certs.map((cert) => (
+          {visibleCerts.map((cert) => (
             <div
               key={cert.id}
-              className="group rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between overflow-hidden"
+              className="group rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm hover:shadow-xl hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between overflow-hidden animate-fade-in"
             >
               <div>
                 {/* 1. GAMBAR FOTO SERTIFIKAT */}
@@ -147,6 +163,27 @@ export default function Certifications({ data }) {
             </div>
           ))}
         </div>
+
+        {/* Toggle Button: Tampilkan Lebih Banyak / Lebih Sedikit */}
+        {certs.length > INITIAL_ITEMS && (
+          <div className="flex justify-center mt-12">
+            <button
+              onClick={handleToggleExpand}
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl font-bold text-sm text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-md hover:border-emerald-500 hover:text-emerald-600 dark:hover:text-emerald-400 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 group"
+            >
+              <span>
+                {isExpanded 
+                  ? 'Tampilkan Lebih Sedikit' 
+                  : `Lihat Lebih Banyak Sertifikasi (+${certs.length - INITIAL_ITEMS})`}
+              </span>
+              {isExpanded ? (
+                <ChevronUp className="w-4 h-4 text-emerald-500 group-hover:-translate-y-1 transition-transform" />
+              ) : (
+                <ChevronDown className="w-4 h-4 text-emerald-500 group-hover:translate-1 transition-transform" />
+              )}
+            </button>
+          </div>
+        )}
 
         {/* Pure Photo Modal Lightbox (Tanpa Teks Menutupi) */}
         {selectedCert && (
