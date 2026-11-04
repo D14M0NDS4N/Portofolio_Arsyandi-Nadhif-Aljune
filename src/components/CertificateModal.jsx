@@ -58,12 +58,12 @@ export default function CertificateModal({ certificate, onClose }) {
           {/* Certificate Badge & Title Overlay */}
           <div className="absolute bottom-5 left-6 right-6">
             <div className="flex flex-wrap items-center gap-2 mb-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold bg-teal-500 text-white shadow-md">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500 text-white shadow-md">
                 <ShieldCheck className="w-3.5 h-3.5" />
-                <span>Terverifikasi Resmi</span>
+                <span>{certificate.status || "Masih Berlaku"}</span>
               </span>
-              <span className="px-3 py-1 rounded-lg text-xs font-mono font-medium bg-slate-900/80 text-teal-300 border border-slate-700 backdrop-blur-md">
-                {certificate.category}
+              <span className="px-3 py-1 rounded-lg text-xs font-mono font-medium bg-slate-900/80 text-emerald-300 border border-emerald-500/30 backdrop-blur-md">
+                {certificate.validity || "Aktif"}
               </span>
             </div>
             <h3 className="text-xl sm:text-2xl font-extrabold text-white">
@@ -180,3 +180,4 @@ export default function CertificateModal({ certificate, onClose }) {
     </div>
   );
 }
+

@@ -20,3 +20,4 @@ PANDUAN MEMASUKKAN FOTO / SCAN SERTIFIKAT:
    image: "/certificates/cert-dbs-2026.jpg",
 
 Sertifikat akan langsung tampil di kolom grid halaman Sertifikasi lengkap dengan tombol pratinjau zoom/lightbox!
+
